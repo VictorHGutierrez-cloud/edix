@@ -1,0 +1,248 @@
+**) Those that work with Order Form (which includes TCs):**
+
+> The commission % can be negotiated with a partner up to the maximum % shown in the table for each type. Any % exceeding this requires approval from the partner's VP.
+> 
+
+| **Partner type** | **Sales Commission (Max)** | **Duration** | **Sales cycle service (who does the demo)** | **Implementation billing (onboarding)** | **Support L1 (services and billing)** | **Support Commission** | **Client subscription billing** |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| **Referral** | 20% | 12 Months | **Factorial** | **Factorial** | **Factorial** | 0 | **Factorial** |
+| **Reseller 1** | 40% | 12 Months | Partner | **Factorial** | **Factorial** | 0 | **Factorial** |
+| **Reseller 2** | 50%  | 12 Months | Partner | Partner/Factorial | Partner/Factorial | 20% | **Factorial** |
+| **Expert** | 55% | 12 Months | Partner | Partner | Partner | 20% | **Factorial** or Partner (or sub-partner) |
+| **Implementator** | 100% of onboarding | - | **Factorial** | Partner | **Factorial** | 0 | **Factorial** |
+- **Referral:** They only refer clients. Factorial invoices the end customer. The partner invoices us for a 20% commission.  AUTOBILLING AVAILABLE (EU partners).
+- **Reseller 1:** They recommend Factorial and handle the sales cycle. Factorial invoices the end customer. The partner invoices us for a 40% commission. AUTOBILLING AVAILABLE (EU partners).
+- **Reseller 2:** They recommend Factorial, handle the sales cycle, perform implementation, and provide level 1 support. Factorial or the partner invoices the end customer. The partner invoices us for a 50%  commission, as well as 100% of the implementation and level 1 support. WILL HAVE AUTOBILLING.
+- **Expert:** They recommend Factorial, handle the sales cycle, perform implementation, and provide level 1 support. The partner (or their sub-partner) invoices the end customer in full, and Factorial invoices the partner for the subscription amount minus the commission of 55%. WILL NOT HAVE AUTOBILLING.
+
+**B) Those that work with a special contract:** 
+
+- **Distribution (Bulk Purchase):**  They purchase seats (bulk purchase), pay us for them, and resell them at their own pace. Factorial invoices the partner for their purchase. WILL NOT HAVE AUTOBILLING.
+- **Distribution (Mayorista):** They will bring partners, that will bring new customers. They are the ones paying for the final customer subscription. WILL NOT HAVE AUTOBILLING.
+
+**Suport Level 1:**
+
+- Identify customer problems and diagnose the root cause of the problem. Provide basic troubleshooting and guidance to customers to resolve their issues. Respond to frequently asked questions related to products or services, features, account setup, billing inquiries, or general usage questions.
+- **3. Commission (Revshare)**
+    
+    **3.1 Commission %**
+    
+    - Commission % were shared in the table in the previous topic (Partnership Types);
+    - If the commission % or payment duration is different (higher) from the informed in the table it would require approval from Partner Director.
+- **4. Internal Policy for Partners own usage of Factorial Account**
+    
+    4.1 Partner will **use Factorial internally** for their own operations.
+    
+    If the Partner is also a client of Factorial, using the platform for their own purposes, they are eligible for a discount equivalent of a maximum of **50%** regardless of the number of seats.
+    The discount remains valid as long as the partnership contract is **active**. However, if the partnership is officially terminated or if Factorial determines that the Partner is inactive, Factorial reserves the right to re-evaluate and potentially withdraw or reduce the discount.
+    
+    - The partner must have a valid ongoing partnership contract;
+    - This discount is not cummulative with other discounts/promotions;
+    - This discount **does not apply** to **Referral Partners**.
+    
+    4.2 Partner will use factorial as a **Demo environment** for customer prospection.
+    
+    Partners may use **Factorial as a demo environment** for the purposes of customer prospecting.
+    
+    **Eligibility and Conditions**:
+    
+    - **Experts/Resellers and Integration Partners** are eligible for a **free production account** to be used strictly for demo purposes, valid for the duration of the partnership.
+    - The demo account is granted with a **6-month validity**, and must be **renewed every 6 months** via a **Finance support ticket**.
+    - If **Finance does not receive a renewal request**, the demo account will be **automatically deactivated** after the 6-month period.
+    - The partner must have an **active and valid partnership agreement** in place.
+    - The account must **not be used for personal or internal business purposes** by the partner.
+    - If it is determined that the partner is **no longer active** or is misusing the account, it may be **terminated without notice**.
+    - This policy **does not apply to Referral Partners**.
+    
+    ### **Procedure to Request a Demo Environment**
+    
+    To request or renew a partner demo environment, follow these steps:
+    
+    1. **Create a Ticket to Finance**
+        - **Ticket Type**: `Partners`
+    2. **Include the Following Information in the Ticket**:
+        - ✅ **Proof of Partnership**: Evidence of a signed and valid partnership agreement confirming the partner is either an **Expert/Reseller** or **Integration Partner** (Referral Partners are not eligible).
+        - ✅ **Partner Information**: Name of the company, point of contact, and partner type.
+        - ✅ **Required Modules**: List of Factorial modules the partner needs access to in the demo environment.
+        - ✅ **Number of Seats**: Indicate how many user seats are needed for the demo account.
+        
+        ### 🔁 **Renewal Request (Every 6 Months)**
+        
+        To **renew an existing demo environment**:
+        
+        1. **Create a new ticket to Finance**
+            - **Ticket Type**: `Partners`
+        2. **Include the Following Information**:
+            - ✅ **Mention the BO (Back Office) account** that is currently being used.
+            - ✅ Clearly state that you are requesting a **renewal for another 6-month period**.
+            - ✅ Confirm that the partner remains active and eligible under the partnership terms.
+        
+        ⏳ **Note**: If Finance does not receive a renewal ticket, the demo account will be **automatically deactivated** after the 6-month period.
+        
+- **5. OMNEA Request**
+    
+    After the prospection and when you already know the partner wants to sign a partnership agreement with Factorial is when you have to create the Request in OMNEA.
+    
+    <aside>
+    💡  If you dont have access to OMNEA request it to IT Team
+    
+    </aside>
+    
+    # **Request For New Partner - INTAKE**
+    
+    The Intake is divided into 4 sections:
+    
+    ### **A) Factorial Information (4 questions)**
+    
+    [Untitled](attachment:650371e4-fadd-45cc-a4af-a1aac91881e6:Untitled.mp4)
+    
+    1. **For Which Factorial Entity is this agreement?**
+    
+    Are you signing with HQ Spain, Mexico, US or Brazil? (Which entity will be paying for this partner commission?)
+    
+    1. **For Which Market is this agreement for?**
+    
+    Choose the country your partner is from or ROW if your partner will work with customers from more countries.
+    
+    1. **Who will be Factorial owner  for this agreement?**
+    
+    Usually is the person that is creating the request, Should be the same owner in Hubspot.
+    
+    1. **What is the Factorial owner email?**
+    
+    Email of the person mentioned in the previous question
+    
+    ### **B) Partnership Information (7 questions)**
+    
+    1. **What is the Partner Legal Name?**
+    
+    The same name registered in [CIF](https://infonif.economia3.com/) or [VIES](https://ec.europa.eu/taxation_customs/vies/#/vat-validation)
+    
+    1. **Is the Partner working as an individual?**
+    
+    If YES, you will have to uppload their MOD 36
+    
+    1. **What is the Partner Tax ID?**
+    
+    Check Item 1 Basic Requirements
+    
+    1. **What is the Partner Address?**
+    
+    Same information as in their official document
+    
+    1. **What's the full name of the person signing contract?**
+    
+    Person in the company with power to sign contracts
+    
+    1. **What is the email of the person signing the contract?**
+    
+    email of the mentioned person in the previous question
+    
+    1. **Is the provided email the same one for billing?**
+    
+    What is the email they want to receive the commission PO or other communication from Factorial?
+    
+    ### **C) Partnership Contractual Conditions (13 questions)**
+    
+    1. **What kind of Relationship they are going to have with Factorial?**
+    
+    Only partner or he will also be a customer? (is not a problem if this changes in the future, reply it like they are today)
+    
+    1. **Is Partner already customer?**
+    
+    If you replied YES, fot the previous questions, this question will appear, if the partner is already a customer we will request the Customer hubspot ID.
+    
+    3.**What is the estimated ARR for one year in EUROS ?**
+    
+    This estimation has 2 main purposes, to be able to verify in a year if the partner was sucessfull as first predicted and to analyse the need for our Legal team be involved. 
+    
+    1. **What kind of collaboration will it be ?**
+    
+    Distributors in this case are only the ones that buys Factorial i n BULK (they buy several seats at once to resell at their own pace).
+    
+    Partnership (all regular partners)
+    
+    1. **Will it be Bilateral or unilateral?**
+    
+    Unilateral : Only the partner will refer customers to Factorial
+    
+    Bilateral: Factorial will also refer customers to the Partner
+    
+    1. **What is the sales fee commission (%) ?**
+    
+    The partner will receive a commission for the first 12 months
+    
+    1. **How long will be the sales fee commission?** 
+    
+    Standard is 12 months, more then this the Partner Director has to approve.
+    
+    1. **Are they going to have a bonus**
+    
+    This Bonus refers to The Bonification paid quartely if achieved the New MRR goal. It is valid for Resseller and Expert partners. (is not the same thing as the monthly incentive).
+    
+    If you chose this option please copy the text that appears in “addittional information” in the order form.
+    
+    1. **What type of agreement are we going to use ?**
+    
+    Depending on what was replied in the question 3, there will be  2 options here
+    Order Form or Partners Contract, the recommended is the Order Form, if its filled properly, and with all the correct information the process is very fast, if legal has to review a contract it can add weeks, even months until the signing of the contract.
+    
+    Once you choose the Order form an additional question will appear with the link to the drive where you can download the correct order form and fill with the information already shared in this intake, then upload it to the intake - Finance will review it and send it to signature
+    
+    1. **Who is going to do the onboarding for the clients?**
+    
+    If the partner is doing the onboarding he has to charge the final customer as well.
+    
+    1. **Is the Partner going to provide L1 support for the clients?**
+    
+    This is valid only for Ressellers 2 and Experts, if they do Support for the customer they shall receive a commission from the 13th month (end of sales commission), until the customer remains a customer.
+    
+    1. **How much is the commission (%) for the support ?** 
+    
+    If previous question is a yes, we ask how much will be this commission, remember that we have trashholds and if the number surpass it, will need Partner Director approval
+    
+    1. **What is the Partner's IBAN number?** 
+    
+    This is basic requirement to sign the contract, it has to be the same information shared in the bak certificate.
+    
+    ### **D) Billing Information (3 questions)**
+    
+    1. **Does the Partner authorise Factorial to do auto-billing?**
+    
+    This means they will not need to send us an invoice, we will automatically send the payment of the commission to the bank details we have. This is optional, a partner can disagree and then we will remain with the invoice payment. 
+    
+    side note: with autobill the payment will be faster.
+    
+    This option is only available for partners signing with Everyday Software subsidiary.
+    
+    1. **Who is going to invoice the onbording to the final customer?**
+    
+    Who will charge the onboarding to the final customer?
+    
+    1. **Who is going to invoice Factorial's subcription to the final customer?**
+    
+    Who will charge the subscription to the final customer? (Only resseler 2 and experts can do it, when this option is chosen the commission will be a discount in the bill).
+    
+    REQUEST SUBMITTED
+    
+    Finance Approval
+    
+    Finance will check if the intake and the contract match, if the information shared are correct and if the treshholds are okay. Once the intake is approved, finance will send the contract to be signed though docusing to both parties (partner and factorial) and to the partner owner in cc.
+    
+    Documents upload:
+    
+    In this step the partner owner has to upload the contract signed by both parties and the bank certificate.
+    
+    When a bank certificate is not requested:
+    
+    - the partner is charging the final customer
+    - Brazil
+    
+- **6. DPA**
+    1. Partner performs and charges Onboarding + Subscription (Support level 1) to the final customer - With External Access to Back Office
+    - DPA Partner expert must have appendix 4
+    - The partner has to share the signed DPA between final customer and Partner
+    1. Partner performs and charges Onboarding + Subscription (Support level 1) to the final customer - no External Acess to Back Office
+    - Regular DPA Partner expert (without appedinx 4)
+    1. Partner performs Onboarding + Support Level 1 but is Factorial that charges the final customer
+    - Partner dont have to sign any additional document (Annex 2 of T&C is appliable), and customer will sign Factorial comercial proposal (that includes factorial DPA for customers)
