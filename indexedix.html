@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Modelos | Factorial & Edix - Business Plan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 45vh;
+            max-height: 450px;
+        }
+        .chart-container-sm {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 40vh;
+            max-height: 350px;
+        }
+        @media (max-width: 768px) {
+            .chart-container {
+                height: 50vh;
+                max-height: 400px;
+            }
+        }
+        .nav-link {
+            @apply px-3 py-2 rounded-md text-sm font-medium text-stone-600 hover:bg-stone-200 hover:text-stone-900 transition-colors;
+        }
+        .nav-link.active {
+            @apply text-white hover:text-white;
+            background-color: #07A2AD;
+        }
+        .nav-link.active:hover {
+            background-color: #05949c;
+        }
+        .tab-link {
+            @apply px-4 py-2 text-lg font-medium rounded-t-lg transition-colors duration-200;
+        }
+        .tab-link.active {
+            @apply border-b-4 text-white;
+            border-color: #07A2AD;
+            color: #07A2AD;
+        }
+        .tab-link:not(.active) {
+            @apply text-stone-500 hover:text-stone-800;
+        }
+    </style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <header class="bg-white backdrop-blur-sm shadow-sm sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex-shrink-0 flex items-center">
+                    <h1 class="text-xl font-bold" style="color: #07A2AD;">Factorial <span class="text-stone-600">& Edix</span></h1>
+                </div>
+                <div class="hidden sm:ml-6 sm:flex sm:space-x-4 sm:items-center">
+                    <a href="#resumo" class="nav-link active" data-nav-link>Resumo Executivo</a>
+                    <a href="#modelos" class="nav-link" data-nav-link>Modelos Comparados</a>
+                    <a href="#impacto-mrr" class="nav-link" data-nav-link>Impacto MRR/NDR</a>
+                    <a href="#calculos" class="nav-link" data-nav-link>Cálculos Detalhados</a>
+                    <a href="#vantagens" class="nav-link" data-nav-link>Vantagens</a>
+                    <a href="#recomendacao" class="nav-link" data-nav-link>Recomendação</a>
+                </div>
+                <div class="sm:hidden flex items-center">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-stone-500 hover:text-stone-800 hover:bg-stone-200 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500">
+                        <span class="sr-only">Abrir menu principal</span>
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="sm:hidden hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="#resumo" class="block nav-link active" data-nav-link>Resumo Executivo</a>
+                <a href="#modelos" class="block nav-link" data-nav-link>Modelos Comparados</a>
+                <a href="#impacto-mrr" class="block nav-link" data-nav-link>Impacto MRR/NDR</a>
+                <a href="#calculos" class="block nav-link" data-nav-link>Cálculos Detalhados</a>
+                <a href="#vantagens" class="block nav-link" data-nav-link>Vantagens</a>
+                <a href="#recomendacao" class="block nav-link" data-nav-link>Recomendação</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <section id="resumo" class="scroll-mt-20 mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-stone-900 mb-4">Análise Comparativa: Modelo Distribuição vs Modelo Revenda</h2>
+            <p class="text-lg text-stone-600 mb-8">
+                Esta análise apresenta uma comparação detalhada entre dois modelos de parceria possíveis com a Edix: o Modelo de Distribuição e o Modelo de Revenda. A análise considera todas as vendas fechadas até novembro de 2025 e projeta as comissões ao longo de 2 anos (24 meses) para cada modelo.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-stone-200 text-center">
+                    <h3 class="text-base font-medium text-stone-500 mb-2">Modelo Revenda</h3>
+                    <p class="text-4xl font-bold" style="color: #FF355E;">€41.945</p>
+                    <p class="text-sm text-stone-600 mt-2">Total em 2 anos</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-4 border-stone-200 text-center" style="border-color: #07A2AD;">
+                    <h3 class="text-base font-medium text-stone-500 mb-2">Modelo Distribuição</h3>
+                    <p class="text-4xl font-bold" style="color: #07A2AD;">€69.908</p>
+                    <p class="text-sm text-stone-600 mt-2">Total em 2 anos</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-stone-200 text-center">
+                    <h3 class="text-base font-medium text-stone-500 mb-2">Diferença</h3>
+                    <p class="text-4xl font-bold" style="color: #FFB940;">+67%</p>
+                    <p class="text-sm text-stone-600 mt-2">€27.963 a mais</p>
+                </div>
+            </div>
+            <div class="bg-gradient-to-r from-teal-50 to-cyan-50 p-8 rounded-2xl shadow-lg border-l-4" style="border-color: #07A2AD;">
+                <h3 class="text-2xl font-bold mb-4" style="color: #07A2AD;">📊 Resultado Financeiro</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <p class="text-stone-700 mb-2"><strong>Modelo Revenda:</strong> Equivale a receber <strong>7,20 meses</strong> de receita total</p>
+                        <p class="text-stone-700"><strong>Modelo Distribuição:</strong> Equivale a receber <strong>12 meses</strong> de receita total</p>
+                    </div>
+                    <div>
+                        <p class="text-stone-700 mb-2"><strong>Total de Licenças:</strong> 2.998 licenças (principalmente SAEA com 2.500)</p>
+                        <p class="text-stone-700"><strong>6 Clientes:</strong> De Santa Logística, AVX Qantic, SAEA, Grupo NX, GSX Brasil, Carbono Química</p>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="modelos" class="scroll-mt-20 mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-stone-900 mb-4">Entendimento dos Modelos</h2>
+            <p class="text-lg text-stone-600 mb-8">
+                Compreenda as diferenças fundamentais entre os dois modelos de parceria disponíveis.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-stone-200">
+                    <h3 class="text-xl font-bold mb-4" style="color: #07A2AD;">💼 Modelo de Distribuição</h3>
+                    <ul class="space-y-3 text-stone-700">
+                        <li class="flex items-start">
+                            <span class="mr-2 text-xl" style="color: #07A2AD;">✓</span>
+                            <div><strong>Desconto de até 50%</strong> sobre o preço de venda ao cliente final</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-xl" style="color: #07A2AD;">✓</span>
+                            <div><strong>Desconto vitalício</strong> - mantém 50% nas renovações</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-xl" style="color: #07A2AD;">✓</span>
+                            <div><strong>Controle comercial total</strong> - você define o preço final</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-xl" style="color: #07A2AD;">✓</span>
+                            <div><strong>Não afeta MRR</strong> da Edix/Factorial</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-xl" style="color: #07A2AD;">✓</span>
+                            <div><strong>Margem de 50%</strong> sobre cada mensalidade</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-stone-200">
+                    <h3 class="text-xl font-bold mb-4" style="color: #FF355E;">📋 Modelo de Revenda (Atual)</h3>
+                    <ul class="space-y-3 text-stone-700">
+                        <li class="flex items-start">
+                            <span class="mr-2 text-xl" style="color: #FF355E;">•</span>
+                            <div><strong>Comissão Ano 1:</strong> 40% sobre receita mensal</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-xl" style="color: #FF355E;">•</span>
+                            <div><strong>Comissão Ano 2:</strong> 20% sobre receita mensal</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-xl" style="color: #FF355E;">•</span>
+                            <div><strong>Reduz para 20%</strong> após o primeiro ano</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-xl" style="color: #FF355E;">•</span>
+                            <div><strong>Sem controle</strong> sobre o preço final ao cliente</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-xl" style="color: #FF355E;">•</span>
+                            <div><strong>Pagamento trimestral</strong> (40% acumulado a cada 3 meses)</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2 text-xl" style="color: #FF355E;">•</span>
+                            <div><strong>Fluxo:</strong> Cliente → Factorial → Edix → Parceiro</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-stone-200">
+                <h3 class="text-2xl font-bold text-center mb-6">Comparação Visual - Receita Total (2 Anos)</h3>
+                <div class="chart-container" style="max-height: 400px;">
+                    <canvas id="comparisonChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="impacto-mrr" class="scroll-mt-20 mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-stone-900 mb-4">Impacto Estratégico: MRR e NDR</h2>
+            <p class="text-lg text-stone-600 mb-8">
+                O modelo de distribuição resolve um problema estrutural que vai além da rentabilidade do parceiro.
+            </p>
+
+            <div class="bg-gradient-to-r from-red-50 to-orange-50 p-8 rounded-2xl shadow-lg border-l-4 border-red-500 mb-8">
+                <h3 class="text-2xl font-bold mb-4 text-red-800">⚠️ O Problema no Modelo Revenda (Atual)</h3>
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2 text-stone-800">📉 Política Interna da Factorial</h4>
+                        <ul class="text-stone-700 space-y-1 text-sm">
+                            <li>• <strong>Desconto máximo permitido:</strong> 12,5% (sem afetar MRR)</li>
+                            <li>• <strong>Exceção temporária (Black Friday):</strong> até 25%</li>
+                            <li>• <strong>Acima disso:</strong> o desconto afeta MRR e NDR (Net Dollar Retention)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2 text-stone-800">🔴 O Que Aconteceu na Prática</h4>
+                        <p class="text-stone-700 text-sm mb-2">Para fechar negócios, foram concedidos descontos bem acima do limite:</p>
+                        <ul class="text-stone-700 space-y-1 text-sm">
+                            <li>• Alguns casos: 37,5%, 40%, até 54% (SAEA)</li>
+                            <li>• <strong>A própria Factorial arcou com o desconto</strong>, reduzindo a receita reconhecida</li>
+                            <li>• <strong>Impacto estrutural negativo:</strong> margem caiu, NDR piorou, política interna foi "esticada"</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2 text-red-700">💰 Impacto Numérico Real</h4>
+                        <p class="text-stone-700 text-sm mb-2"><strong>Receita Total dos 6 Clientes:</strong> €5.825,69/mês</p>
+                        <p class="text-stone-700 text-sm mb-2"><strong>Com descontos aplicados:</strong> MRR reconhecido menor</p>
+                        <p class="text-red-700 text-sm font-semibold">Cada desconto acima de 12,5% reduz o MRR reconhecido diretamente no sistema contábil</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-teal-50 to-cyan-50 p-8 rounded-2xl shadow-lg border-l-4 border-teal-500 mb-8">
+                <h3 class="text-2xl font-bold mb-4" style="color: #07A2AD;">🚀 Como a Distribuição Resolve a Raiz do Problema</h3>
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2" style="color: #07A2AD;">🔑 Por Que Não Afeta MRR da Factorial</h4>
+                        <ul class="text-stone-700 space-y-2 text-sm">
+                            <li>• <strong>O parceiro compra</strong> a licença da Factorial com até 50% de desconto fixo</li>
+                            <li>• <strong>A Factorial reconhece o valor cheio (100%) como MRR</strong>, pois a transação é B2B (Factorial → distribuidor)</li>
+                            <li>• <strong>O parceiro revende</strong> ao preço que quiser (Factorial não entra na precificação final)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg">
+                        <h4 class="font-semibold mb-2" style="color: #07A2AD;">✅ Benefícios Estruturais</h4>
+                        <ul class="text-stone-700 space-y-1 text-sm">
+                            <li>✅ <strong>NDR da Factorial continua íntegro</strong> - MRR contabilizado é o preço cheio</li>
+                            <li>✅ <strong>Parceiro ganha liberdade de precificação</strong> sem depender da política interna</li>
+                            <li>✅ <strong>Margem e política de canal saudável</strong> para ambos os lados</li>
+                            <li>✅ <strong>Descontos deixam de ser exceção</strong> e passam a ser parte controlada do modelo</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl shadow-lg border-l-4 border-blue-500">
+                <h3 class="text-2xl font-bold mb-4 text-blue-800">💼 Argumento para a Reunião</h3>
+                <div class="bg-white p-6 rounded-lg border-2 border-blue-200">
+                    <p class="text-stone-700 text-lg leading-relaxed italic mb-4">
+                        "Hoje, na revenda, acabamos tendo que abrir concessões de desconto que fogem da política global da Factorial — nosso teto é 12,5%, e quando passamos disso, perdemos MRR e até impacto no NDR.
+                    </p>
+                    <p class="text-stone-700 text-lg leading-relaxed italic mb-4">
+                        A distribuição resolveria isso de forma estrutural: a edX teria liberdade de preço, conseguiria escalar volume, e a Factorial manteria o MRR cheio. É uma forma de profissionalizar o canal, mantendo governança financeira e margem dos dois lados.
+                    </p>
+                    <p class="text-stone-700 text-lg leading-relaxed italic font-semibold">
+                        Por isso, estamos defendendo esse formato — porque ele não só dá autonomia a vocês, como também protege a sustentabilidade da operação global."
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculos" class="scroll-mt-20 mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-stone-900 mb-4">Cálculos Detalhados por Cliente</h2>
+            <p class="text-lg text-stone-600 mb-8">
+                Análise financeira detalhada para cada cliente fechado, comparando os dois modelos ao longo de 2 anos (24 meses).
+            </p>
+
+            <div class="border-b border-stone-300 mb-6">
+                <nav class="-mb-px flex space-x-4 overflow-x-auto" aria-label="Tabs">
+                    <button class="tab-link active whitespace-nowrap" data-tab-target="#tab-todos">Todos os Clientes</button>
+                    <button class="tab-link whitespace-nowrap" data-tab-target="#tab-santa">De Santa Logística</button>
+                    <button class="tab-link whitespace-nowrap" data-tab-target="#tab-saea">SAEA</button>
+                    <button class="tab-link whitespace-nowrap" data-tab-target="#tab-exemplo">Exemplo Prático</button>
+                </nav>
+                </div>
+
+            <div id="tab-todos" class="tab-panel">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-stone-200 overflow-x-auto">
+                    <table class="min-w-full divide-y divide-stone-200">
+                        <thead>
+                            <tr class="bg-stone-50">
+                                <th class="px-4 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Cliente</th>
+                                <th class="px-4 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Valor Mensal (€)</th>
+                                <th class="px-4 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Licenças</th>
+                                <th class="px-4 py-3 text-right text-xs font-medium text-stone-500 uppercase tracking-wider">Revenda (2 anos)</th>
+                                <th class="px-4 py-3 text-right text-xs font-medium text-stone-500 uppercase tracking-wider">Distribuição (2 anos)</th>
+                                <th class="px-4 py-3 text-right text-xs font-medium text-stone-500 uppercase tracking-wider">Diferença</th>
+                            </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-stone-200">
+                            <tr>
+                                <td class="px-4 py-3 text-sm font-medium text-stone-900">De Santa Logística</td>
+                                <td class="px-4 py-3 text-sm text-stone-600">€614,02</td>
+                                <td class="px-4 py-3 text-sm text-stone-600">211</td>
+                                <td class="px-4 py-3 text-sm text-right text-stone-600">€4.420,92</td>
+                                <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">€7.368,24</td>
+                                <td class="px-4 py-3 text-sm text-right font-bold" style="color: #FFB940;">+€2.947,32</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 text-sm font-medium text-stone-900">AVX Qantic</td>
+                                <td class="px-4 py-3 text-sm text-stone-600">€216,32</td>
+                                <td class="px-4 py-3 text-sm text-stone-600">67</td>
+                                <td class="px-4 py-3 text-sm text-right text-stone-600">€1.557,48</td>
+                                <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">€2.595,84</td>
+                                <td class="px-4 py-3 text-sm text-right font-bold" style="color: #FFB940;">+€1.038,36</td>
+                            </tr>
+                            <tr class="bg-teal-50">
+                                <td class="px-4 py-3 text-sm font-bold text-stone-900">SAEA</td>
+                                <td class="px-4 py-3 text-sm font-bold text-stone-900">€4.137,03</td>
+                                <td class="px-4 py-3 text-sm font-bold text-stone-900">2.500</td>
+                                <td class="px-4 py-3 text-sm text-right text-stone-600">€29.786,64</td>
+                                <td class="px-4 py-3 text-sm text-right font-bold" style="color: #07A2AD;">€49.644,48</td>
+                                <td class="px-4 py-3 text-sm text-right font-bold" style="color: #FFB940;">+€19.857,84</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 text-sm font-medium text-stone-900">Grupo NX</td>
+                                <td class="px-4 py-3 text-sm text-stone-600">€199,04</td>
+                                <td class="px-4 py-3 text-sm text-stone-600">30</td>
+                                <td class="px-4 py-3 text-sm text-right text-stone-600">€1.433,16</td>
+                                <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">€2.388,48</td>
+                                <td class="px-4 py-3 text-sm text-right font-bold" style="color: #FFB940;">+€955,32</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 text-sm font-medium text-stone-900">GSX Brasil</td>
+                                <td class="px-4 py-3 text-sm text-stone-600">€434,16</td>
+                                <td class="px-4 py-3 text-sm text-stone-600">110</td>
+                                <td class="px-4 py-3 text-sm text-right text-stone-600">€3.125,88</td>
+                                <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">€5.209,92</td>
+                                <td class="px-4 py-3 text-sm text-right font-bold" style="color: #FFB940;">+€2.084,04</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-3 text-sm font-medium text-stone-900">Carbono Química</td>
+                                <td class="px-4 py-3 text-sm text-stone-600">€225,12</td>
+                                <td class="px-4 py-3 text-sm text-stone-600">80</td>
+                                <td class="px-4 py-3 text-sm text-right text-stone-600">€1.620,84</td>
+                                <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">€2.701,44</td>
+                                <td class="px-4 py-3 text-sm text-right font-bold" style="color: #FFB940;">+€1.080,60</td>
+                            </tr>
+                            <tr class="bg-stone-100 font-bold">
+                                <td class="px-4 py-4 text-sm text-stone-900">TOTAL GERAL</td>
+                                <td class="px-4 py-4 text-sm text-stone-900">€5.825,69</td>
+                                <td class="px-4 py-4 text-sm text-stone-900">2.998</td>
+                                <td class="px-4 py-4 text-sm text-right text-stone-600">€41.944,92</td>
+                                <td class="px-4 py-4 text-sm text-right" style="color: #07A2AD;">€69.908,40</td>
+                                <td class="px-4 py-4 text-sm text-right" style="color: #FFB940;">+€27.963,48</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="tab-santa" class="tab-panel hidden">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-stone-200">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #07A2AD;">De Santa Logística</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div class="p-4 rounded-lg bg-stone-50">
+                            <h4 class="font-semibold mb-3 text-stone-700">Modelo Revenda</h4>
+                            <p class="text-sm text-stone-600 mb-2">Valor Mensal: €614,02</p>
+                            <div class="border-l-4 border-stone-400 pl-3 mb-3 mt-3">
+                                <p class="text-sm font-semibold text-stone-800 mb-1">📅 Ano 1 (40% da mensalidade):</p>
+                                <p class="text-sm text-stone-600 mb-1">Comissão: <strong>40%</strong> = €245,61/mês</p>
+                                <p class="text-xs text-stone-500 mb-1">💳 Pagamento trimestral: €736,83 a cada 3 meses</p>
+                                <p class="text-sm text-stone-600">Total Ano 1: €2.947,32 (4 trimestres)</p>
+                            </div>
+                            <div class="border-l-4 border-red-400 pl-3 mb-3">
+                                <p class="text-sm font-semibold text-stone-800 mb-1">📅 Ano 2 (20% da mensalidade):</p>
+                                <p class="text-sm text-stone-600 mb-1">Comissão: <strong>20%</strong> = €122,80/mês ⬇️</p>
+                                <p class="text-xs text-stone-500 mb-1">💳 Pagamento trimestral: €368,40 a cada 3 meses</p>
+                                <p class="text-sm text-stone-600">Total Ano 2: €1.473,60 (4 trimestres)</p>
+                            </div>
+                            <div class="border-t border-stone-300 pt-3 mt-3">
+                                <p class="text-lg font-bold text-stone-900">Total 2 Anos: €4.420,92</p>
+                                <p class="text-xs text-stone-500 mt-1">Redução de 50% no segundo ano!</p>
+                            </div>
+                            </div>
+                        <div class="p-4 rounded-lg bg-teal-50">
+                            <h4 class="font-semibold mb-3" style="color: #07A2AD;">Modelo Distribuição</h4>
+                            <p class="text-sm text-stone-600 mb-2">Valor Mensal: €614,02</p>
+                            <p class="text-sm text-stone-600 mb-2">Margem: 50% = €307,01/mês</p>
+                            <p class="text-sm text-stone-600 mb-2">Ano 1: €3.684,12</p>
+                            <p class="text-sm text-stone-600 mb-2">Ano 2: €3.684,12</p>
+                            <p class="text-lg font-bold mt-4" style="color: #07A2AD;">Total: €7.368,24</p>
+                            </div>
+                        </div>
+                    <div class="p-4 rounded-lg bg-yellow-50 border-l-4" style="border-color: #FFB940;">
+                        <p class="font-bold" style="color: #FFB940;">Diferença: +€2.947,32 (+67%)</p>
+                            </div>
+                        </div>
+                    </div>
+
+            <div id="tab-saea" class="tab-panel hidden">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-stone-200">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #07A2AD;">SAEA - Maior Cliente</h3>
+                    <div class="p-4 rounded-lg bg-red-50 border-l-4 border-red-500 mb-6">
+                        <p class="text-sm font-bold text-red-800 mb-2">⚠️ SITUAÇÃO ESPECIAL - SAEA</p>
+                        <p class="text-sm text-red-700 mb-1">• Valor mensal atual: €4.137,03 (já com 52% de desconto aplicado)</p>
+                        <p class="text-sm text-red-700 mb-1">• Valor original do contrato: €545.500/ano = €45.458,33/mês</p>
+                        <p class="text-sm text-red-700">• No modelo distribuição, não seria possível aplicar mais 50% de desconto no valor atual, pois não sobraria margem.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div class="p-4 rounded-lg bg-stone-50">
+                            <h4 class="font-semibold mb-3 text-stone-700">Modelo Revenda (sobre valor atual)</h4>
+                            <p class="text-sm text-stone-600 mb-2">Valor Mensal Atual: €4.137,03</p>
+                            <p class="text-sm text-stone-600 mb-2">Licenças: 2.500</p>
+                            <div class="border-l-4 border-stone-400 pl-3 mb-3 mt-3">
+                                <p class="text-sm font-semibold text-stone-800 mb-1">📅 Ano 1 (40% da mensalidade):</p>
+                                <p class="text-sm text-stone-600 mb-1">Comissão: <strong>40%</strong> = €1.654,81/mês</p>
+                                <p class="text-xs text-stone-500 mb-1">💳 Pagamento trimestral: €4.964,43 a cada 3 meses</p>
+                                <p class="text-sm text-stone-600">Total Ano 1: €19.857,72 (4 trimestres)</p>
+                            </div>
+                            <div class="border-l-4 border-red-400 pl-3 mb-3">
+                                <p class="text-sm font-semibold text-stone-800 mb-1">📅 Ano 2 (20% da mensalidade):</p>
+                                <p class="text-sm text-stone-600 mb-1">Comissão: <strong>20%</strong> = €827,41/mês ⬇️</p>
+                                <p class="text-xs text-stone-500 mb-1">💳 Pagamento trimestral: €2.482,23 a cada 3 meses</p>
+                                <p class="text-sm text-stone-600">Total Ano 2: €9.928,92 (4 trimestres)</p>
+                            </div>
+                            <div class="border-t border-stone-300 pt-3 mt-3">
+                                <p class="text-lg font-bold text-stone-900">Total 2 Anos: €29.786,64</p>
+                                <p class="text-xs text-stone-500 mt-1">Redução de 50% no segundo ano!</p>
+                            </div>
+                        </div>
+                        <div class="p-4 rounded-lg bg-teal-50">
+                            <h4 class="font-semibold mb-3" style="color: #07A2AD;">Modelo Distribuição (sobre valor original)</h4>
+                            <p class="text-sm text-stone-600 mb-2">Valor Original: €45.458,33/mês</p>
+                            <p class="text-sm text-stone-600 mb-2">Licenças: 2.500</p>
+                            <p class="text-xs text-stone-500 mb-2 italic">*Aplicável apenas se o desconto de 52% não tivesse sido dado</p>
+                            <p class="text-sm text-stone-600 mb-2">Parceiro paga: €22.729,17/mês (50% desconto)</p>
+                            <p class="text-sm text-stone-600 mb-2">Margem: €22.729,17/mês</p>
+                            <p class="text-sm text-stone-600 mb-2">Ano 1: €272.750,04</p>
+                            <p class="text-sm text-stone-600 mb-2">Ano 2: €272.750,04</p>
+                            <p class="text-lg font-bold mt-4" style="color: #07A2AD;">Total: €545.500,08</p>
+                        </div>
+                    </div>
+                    <div class="p-4 rounded-lg bg-yellow-50 border-l-4" style="border-color: #FFB940;">
+                        <p class="font-bold" style="color: #FFB940;">Diferença (se aplicado no valor original): +€515.713,36 (+1.732%)</p>
+                        <p class="text-sm text-stone-600 mt-2">⚠️ <strong>Importante:</strong> O modelo distribuição para SAEA só seria viável se aplicado ao valor original do contrato (antes do desconto de 52%). Com o desconto já aplicado, não há margem suficiente.</p>
+                            </div>
+                        </div>
+                    </div>
+
+            <div id="tab-exemplo" class="tab-panel hidden">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border border-stone-200">
+                    <h3 class="text-2xl font-bold mb-4" style="color: #07A2AD;">Exemplo Prático - Cliente Médio</h3>
+                    <p class="text-lg text-stone-600 mb-6">Para um cliente que paga €614,02/mês (De Santa Logística):</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div class="p-6 rounded-lg bg-stone-50 border-2 border-stone-200">
+                            <h4 class="font-bold text-lg mb-4 text-stone-700">Modelo Revenda</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between">
+                                    <span class="text-stone-600">Receita mensal:</span>
+                                    <span class="font-semibold">€614,02</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-stone-600">Sua comissão Ano 1 (40%):</span>
+                                    <span class="font-semibold text-stone-900">€245,61/mês</span>
+                                </div>
+                                <div class="text-xs text-stone-500 mb-2">💳 Pagamento trimestral: €736,83 a cada 3 meses</div>
+                                <div class="flex justify-between">
+                                    <span class="text-stone-600">Sua comissão Ano 2 (20%):</span>
+                                    <span class="font-semibold text-stone-900">€122,80/mês</span>
+                                </div>
+                                <div class="text-xs text-stone-500 mb-2">💳 Pagamento trimestral: €368,40 a cada 3 meses</div>
+                                <div class="border-t border-stone-300 pt-3 mt-3">
+                                    <div class="flex justify-between">
+                                        <span class="text-stone-600">Em 2 anos:</span>
+                                        <span class="font-bold text-lg text-stone-900">€4.420,92</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+
+                        <div class="p-6 rounded-lg bg-teal-50 border-4" style="border-color: #07A2AD;">
+                            <h4 class="font-bold text-lg mb-4" style="color: #07A2AD;">Modelo Distribuição</h4>
+                            <div class="space-y-3">
+                                <div class="flex justify-between">
+                                    <span class="text-stone-600">Receita mensal:</span>
+                                    <span class="font-semibold">€614,02</span>
+                            </div>
+                                <div class="flex justify-between">
+                                    <span class="text-stone-600">Sua margem (50%):</span>
+                                    <span class="font-semibold" style="color: #07A2AD;">€307,01/mês</span>
+                        </div>
+                                <div class="border-t border-teal-300 pt-3 mt-3">
+                                    <div class="flex justify-between">
+                                        <span class="text-stone-600">Em 2 anos:</span>
+                                        <span class="font-bold text-lg" style="color: #07A2AD;">€7.368,24</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                    <div class="p-6 rounded-lg bg-yellow-50 border-l-4" style="border-color: #FFB940;">
+                        <p class="text-xl font-bold mb-2" style="color: #FFB940;">Diferença: 1,67x mais receita no modelo distribuição!</p>
+                        <p class="text-stone-600">De €245,61/mês (ano 1) e €122,80/mês (ano 2) para €307,01/mês constante</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vantagens" class="scroll-mt-20 mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-stone-900 mb-4">Vantagens do Modelo Distribuição</h2>
+            <p class="text-lg text-stone-600 mb-8">
+                Por que o modelo distribuição é a escolha mais inteligente para o parceiro Edix.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-teal-200">
+                    <div class="text-4xl mb-4 text-center">💰</div>
+                    <h3 class="text-xl font-bold mb-3 text-center" style="color: #07A2AD;">Maior Rentabilidade</h3>
+                    <p class="text-stone-600 text-center"><strong>67% mais receita</strong> comparado ao modelo revenda. €27.963 a mais em 2 anos.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-teal-200">
+                    <div class="text-4xl mb-4 text-center">🔄</div>
+                    <h3 class="text-xl font-bold mb-3 text-center" style="color: #07A2AD;">Desconto Vitalício</h3>
+                    <p class="text-stone-600 text-center"><strong>50% garantido</strong> nas renovações. Margem consistente ao longo do tempo.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-teal-200">
+                    <div class="text-4xl mb-4 text-center">🎯</div>
+                    <h3 class="text-xl font-bold mb-3 text-center" style="color: #07A2AD;">Controle Comercial</h3>
+                    <p class="text-stone-600 text-center"><strong>Flexibilidade total</strong> para negociar preços com o cliente final.</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-teal-200">
+                    <div class="text-4xl mb-4 text-center">📊</div>
+                    <h3 class="text-xl font-bold mb-3 text-center" style="color: #07A2AD;">Não Afeta MRR</h3>
+                    <p class="text-stone-600 text-center">O desconto é dado pelo parceiro, <strong>não pela Factorial</strong>, preservando o MRR da Edix.</p>
+            </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-teal-200">
+                    <div class="text-4xl mb-4 text-center">📈</div>
+                    <h3 class="text-xl font-bold mb-3 text-center" style="color: #07A2AD;">Volume</h3>
+                    <p class="text-stone-600 text-center">Com <strong>2.998 licenças</strong> no total, o modelo se torna ainda mais vantajoso.</p>
+                            </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-teal-200">
+                    <div class="text-4xl mb-4 text-center">📅</div>
+                    <h3 class="text-xl font-bold mb-3 text-center" style="color: #07A2AD;">Previsibilidade</h3>
+                    <p class="text-stone-600 text-center">Margem fixa de <strong>50% facilita</strong> planejamento financeiro e projeções.</p>
+                        </div>
+                    </div>
+
+            <div class="bg-gradient-to-r from-teal-50 to-cyan-50 p-8 rounded-2xl shadow-lg border-l-4" style="border-color: #07A2AD;">
+                <h3 class="text-2xl font-bold mb-4" style="color: #07A2AD;">📝 Considerações Importantes</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="font-semibold mb-2 text-stone-800">Modelo Revenda (Atual)</h4>
+                        <ul class="text-stone-700 space-y-1 text-sm">
+                            <li>• Pagamento trimestral (40% acumulado a cada 3 meses)</li>
+                            <li>• Reduz para 20% após o primeiro ano (de 40% para 20%)</li>
+                            <li>• Sem controle sobre preço final ao cliente</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold mb-2 text-stone-800">Modelo Distribuição (Proposto)</h4>
+                        <ul class="text-stone-700 space-y-1 text-sm">
+                            <li>• Pagamento mensal (parceiro paga à Factorial com desconto)</li>
+                            <li>• Mantém 50% vitalício nas renovações</li>
+                            <li>• Controle total sobre relacionamento comercial</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recomendacao" class="scroll-mt-20 mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-stone-900 mb-4">Recomendação Final</h2>
+            <div class="bg-gradient-to-r from-teal-500 to-cyan-500 p-8 rounded-2xl shadow-xl text-white">
+                <h3 class="text-3xl font-bold mb-6 text-center">O MODELO DE DISTRIBUIÇÃO é claramente mais vantajoso!</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm p-6 rounded-xl">
+                        <h4 class="font-bold text-xl mb-4">💰 Resultado Financeiro</h4>
+                        <ul class="space-y-2 text-lg">
+                            <li>✅ +67% de receita</li>
+                            <li>✅ €27.963 a mais em 2 anos</li>
+                            <li>✅ 1,67x mais rentável</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm p-6 rounded-xl">
+                        <h4 class="font-bold text-xl mb-4">🎯 Benefícios Estratégicos</h4>
+                        <ul class="space-y-2 text-lg">
+                            <li>✅ Desconto vitalício garantido</li>
+                            <li>✅ Controle comercial total</li>
+                            <li>✅ Não afeta MRR da Edix</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-white bg-opacity-30 backdrop-blur-sm p-6 rounded-xl text-center">
+                    <p class="text-xl font-semibold mb-2">O modelo distribuição é especialmente vantajoso considerando o volume de licenças (2.998 no total)</p>
+                    <p class="text-lg">e permite uma relação comercial mais sustentável e previsível ao longo do tempo.</p>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-white p-6 rounded-2xl shadow-lg border border-stone-200">
+                <h3 class="text-2xl font-bold mb-4" style="color: #07A2AD;">📊 Argumentos Chave para a Reunião</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start p-4 rounded-lg bg-stone-50">
+                        <span class="mr-3 text-2xl">1️⃣</span>
+                        <div>
+                            <h4 class="font-semibold text-stone-800 mb-1">Volume de Licenças</h4>
+                            <p class="text-stone-600">2.998 licenças no total (SAEA sozinho tem 2.500) justificam o modelo distribuição</p>
+                            </div>
+                            </div>
+                    <div class="flex items-start p-4 rounded-lg bg-stone-50">
+                        <span class="mr-3 text-2xl">2️⃣</span>
+                        <div>
+                            <h4 class="font-semibold text-stone-800 mb-1">Rentabilidade</h4>
+                            <p class="text-stone-600">Modelo distribuição gera 67% mais receita comparado ao revenda</p>
+                            </div>
+                            </div>
+                    <div class="flex items-start p-4 rounded-lg bg-stone-50">
+                        <span class="mr-3 text-2xl">3️⃣</span>
+                        <div>
+                            <h4 class="font-semibold text-stone-800 mb-1">Sustentabilidade</h4>
+                            <p class="text-stone-600">Desconto vitalício garante margem consistente e previsível</p>
+                            </div>
+                        </div>
+                    <div class="flex items-start p-4 rounded-lg bg-stone-50">
+                        <span class="mr-3 text-2xl">4️⃣</span>
+                        <div>
+                            <h4 class="font-semibold text-stone-800 mb-1">Flexibilidade</h4>
+                            <p class="text-stone-600">Parceiro tem controle total sobre preços comerciais</p>
+                    </div>
+                            </div>
+                    <div class="flex items-start p-4 rounded-lg bg-stone-50">
+                        <span class="mr-3 text-2xl">5️⃣</span>
+                        <div>
+                            <h4 class="font-semibold text-stone-800 mb-1">MRR Preservado</h4>
+                            <p class="text-stone-600">Não afeta o MRR da Edix/Factorial - o desconto é dado pelo parceiro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-8 mt-12 border-t border-stone-200">
+        <p class="text-sm text-stone-500">Factorial & Edix - Business Plan | Análise de Modelos de Parceria</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Comparação Chart - Receita Total (2 Anos)
+            const comparisonCtx = document.getElementById('comparisonChart');
+            if (comparisonCtx) {
+                new Chart(comparisonCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: ['Modelo Revenda', 'Modelo Distribuição'],
+                        datasets: [{
+                            label: 'Receita Total (€)',
+                            data: [41944.92, 69908.40],
+                            backgroundColor: ['#FF355E', '#07A2AD'],
+                            borderColor: ['#FF355E', '#07A2AD'],
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: { display: false },
+                            tooltip: {
+                                callbacks: {
+                                    label: (context) => {
+                                        return 'Receita Total: €' + context.parsed.y.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+                                    callback: (value) => {
+                                        return '€' + (value / 1000).toFixed(0) + 'k';
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // Tab functionality
+            const tabLinks = document.querySelectorAll('[data-tab-target]');
+            const tabPanels = document.querySelectorAll('.tab-panel');
+            
+            tabLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    const target = document.querySelector(link.dataset.tabTarget);
+                    
+                    tabPanels.forEach(panel => panel.classList.add('hidden'));
+                    target.classList.remove('hidden');
+                    
+                    tabLinks.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                });
+            });
+
+            // Navigation functionality
+            const navLinks = document.querySelectorAll('[data-nav-link]');
+            const sections = document.querySelectorAll('section');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                mobileMenuButton.querySelectorAll('svg').forEach(svg => svg.classList.toggle('hidden'));
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    if (mobileMenu.classList.contains('hidden') === false) {
+                        mobileMenu.classList.add('hidden');
+                        mobileMenuButton.querySelectorAll('svg').forEach(svg => svg.classList.toggle('hidden'));
+                    }
+                });
+            });
+
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.4 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const id = entry.target.getAttribute('id');
+                        navLinks.forEach(link => {
+                            link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => observer.observe(section));
+        });
+    </script>
+</body>
+</html>
+
