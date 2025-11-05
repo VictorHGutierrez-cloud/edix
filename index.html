@@ -44,6 +44,7 @@
                     <a href="#resumo" class="nav-link active" data-nav-link>Resumo</a>
                     <a href="#clientes" class="nav-link" data-nav-link>Clientes Fechados</a>
                     <a href="#modelos" class="nav-link" data-nav-link>Modelos</a>
+                    <a href="#tributaria" class="nav-link" data-nav-link>Análise Tributária</a>
                     <a href="#calculos" class="nav-link" data-nav-link>Cálculos</a>
                 </div>
                 <div class="sm:hidden flex items-center">
@@ -60,6 +61,7 @@
                 <a href="#resumo" class="block nav-link active" data-nav-link>Resumo</a>
                 <a href="#clientes" class="block nav-link" data-nav-link>Clientes Fechados</a>
                 <a href="#modelos" class="block nav-link" data-nav-link>Modelos</a>
+                <a href="#tributaria" class="block nav-link" data-nav-link>Análise Tributária</a>
                 <a href="#calculos" class="block nav-link" data-nav-link>Cálculos</a>
             </div>
         </div>
@@ -86,7 +88,7 @@
                 </div>
                 <div class="bg-white p-6 rounded-2xl shadow-lg border border-stone-200 text-center">
                     <h3 class="text-base font-medium text-stone-500 mb-2">Receita Mensal Total</h3>
-                    <p class="text-4xl font-bold" style="color: #07A2AD;">€5.825,69</p>
+                    <p class="text-4xl font-bold" style="color: #07A2AD;">R$ 26.742,52</p>
                     <p class="text-sm text-stone-600 mt-2">MRR consolidado</p>
                 </div>
             </div>
@@ -97,7 +99,7 @@
                     <div>
                         <p class="text-stone-700 mb-2"><strong>Comissão:</strong> 40% sobre receita mensal</p>
                         <p class="text-stone-700 mb-2"><strong>Duração:</strong> 12 meses</p>
-                        <p class="text-stone-700"><strong>Comissão Total (12 meses):</strong> €27.963,36</p>
+                        <p class="text-stone-700"><strong>Comissão Total (12 meses):</strong> R$ 128.364,10</p>
                     </div>
                     <div>
                         <p class="text-stone-700 mb-2"><strong>Onboarding:</strong> Factorial</p>
@@ -119,69 +121,77 @@
                     <thead>
                         <tr class="bg-stone-50">
                             <th class="px-4 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Cliente</th>
-                            <th class="px-4 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Valor Mensal (€)</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Valor Mensal Final (R$)</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Valor Original (R$)</th>
+                            <th class="px-4 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Desconto</th>
                             <th class="px-4 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Licenças</th>
-                            <th class="px-4 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Mês Fechamento</th>
-                            <th class="px-4 py-3 text-left text-xs font-medium text-stone-500 uppercase tracking-wider">Status</th>
-                            <th class="px-4 py-3 text-right text-xs font-medium text-stone-500 uppercase tracking-wider">Comissão 12m (40%)</th>
+                            <th class="px-4 py-3 text-right text-xs font-medium text-stone-500 uppercase tracking-wider">Revenda 1 ano</th>
+                            <th class="px-4 py-3 text-right text-xs font-medium text-stone-500 uppercase tracking-wider">Distribuição 2 anos</th>
                         </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-stone-200">
                         <tr>
-                            <td class="px-4 py-3 text-sm font-medium text-stone-900">De Santa Logística</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">€614,02</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">211</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">Dez/2024</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">Closed Won</td>
-                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">€2.947,32</td>
-                        </tr>
-                        <tr>
                             <td class="px-4 py-3 text-sm font-medium text-stone-900">AVX Qantic</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">€216,32</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">R$ 1.136,97</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">R$ 1.819,15</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">37,50%</td>
                             <td class="px-4 py-3 text-sm text-stone-600">67</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">Ago/2025</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">Closed Won</td>
-                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">€1.038,36</td>
-                        </tr>
-                        <tr class="bg-teal-50">
-                            <td class="px-4 py-3 text-sm font-bold text-stone-900">SAEA</td>
-                            <td class="px-4 py-3 text-sm font-bold text-stone-900">€4.137,03</td>
-                            <td class="px-4 py-3 text-sm font-bold text-stone-900">2.500</td>
-                            <td class="px-4 py-3 text-sm font-bold text-stone-900">Out/2025</td>
-                            <td class="px-4 py-3 text-sm font-bold text-stone-900">Closed Won</td>
-                            <td class="px-4 py-3 text-sm text-right font-bold" style="color: #07A2AD;">€19.857,72</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 text-sm font-medium text-stone-900">Grupo NX</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">€199,04</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">30</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">Out/2025</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">Closed Won</td>
-                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">€955,44</td>
-                        </tr>
-                        <tr>
-                            <td class="px-4 py-3 text-sm font-medium text-stone-900">GSX Brasil</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">€434,16</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">110</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">Nov/2025</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">Closed Pending Payment</td>
-                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">€2.083,92</td>
+                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #FF355E;">R$ 5.457,46</td>
+                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">R$ 21.829,82</td>
                         </tr>
                         <tr>
                             <td class="px-4 py-3 text-sm font-medium text-stone-900">Carbono Química</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">€225,12</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">R$ 840,00</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">R$ 1.400,00</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">40,00%</td>
                             <td class="px-4 py-3 text-sm text-stone-600">80</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">Nov/2025</td>
-                            <td class="px-4 py-3 text-sm text-stone-600">Closed Pending Payment</td>
-                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">€1.080,60</td>
+                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #FF355E;">R$ 4.032,00</td>
+                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">R$ 16.800,00</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm font-medium text-stone-900">De Santa Logística</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">R$ 2.776,30</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">R$ 3.227,91</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">13,99%</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">211</td>
+                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #FF355E;">R$ 13.326,24</td>
+                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">R$ 38.734,88</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm font-medium text-stone-900">Grupo NX</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">R$ 106,50</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">R$ 1.196,00</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">91,10%</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">30</td>
+                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #FF355E;">R$ 511,20</td>
+                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">R$ 14.352,00</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 text-sm font-medium text-stone-900">GSX Brasil</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">R$ 2.328,15</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">R$ 2.739,00</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">15,00%</td>
+                            <td class="px-4 py-3 text-sm text-stone-600">110</td>
+                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #FF355E;">R$ 11.175,12</td>
+                            <td class="px-4 py-3 text-sm text-right font-semibold" style="color: #07A2AD;">R$ 32.868,00</td>
+                        </tr>
+                        <tr class="bg-teal-50">
+                            <td class="px-4 py-3 text-sm font-bold text-stone-900">SAEA</td>
+                            <td class="px-4 py-3 text-sm font-bold text-stone-900">R$ 19.554,60</td>
+                            <td class="px-4 py-3 text-sm font-bold text-stone-900">R$ 42.510,00</td>
+                            <td class="px-4 py-3 text-sm font-bold text-stone-900">54,00%</td>
+                            <td class="px-4 py-3 text-sm font-bold text-stone-900">2.500</td>
+                            <td class="px-4 py-3 text-sm text-right font-bold" style="color: #FF355E;">R$ 93.862,08</td>
+                            <td class="px-4 py-3 text-sm text-right font-bold" style="color: #07A2AD;">R$ 510.120,00</td>
                         </tr>
                         <tr class="bg-stone-100 font-bold">
                             <td class="px-4 py-4 text-sm text-stone-900">TOTAL GERAL</td>
-                            <td class="px-4 py-4 text-sm text-stone-900">€5.825,69</td>
+                            <td class="px-4 py-4 text-sm text-stone-900">R$ 26.742,52</td>
+                            <td class="px-4 py-4 text-sm text-stone-900">R$ 52.892,06</td>
+                            <td class="px-4 py-4 text-sm text-stone-900">49,44%</td>
                             <td class="px-4 py-4 text-sm text-stone-900">2.998</td>
-                            <td class="px-4 py-4 text-sm text-stone-900">-</td>
-                            <td class="px-4 py-4 text-sm text-stone-900">-</td>
-                            <td class="px-4 py-4 text-sm text-right" style="color: #07A2AD;">€27.963,36</td>
+                            <td class="px-4 py-4 text-sm text-right" style="color: #FF355E;">R$ 128.364,10</td>
+                            <td class="px-4 py-4 text-sm text-right" style="color: #07A2AD;">R$ 634.704,71</td>
                         </tr>
                     </tbody>
                 </table>
@@ -267,6 +277,248 @@
             </div>
         </section>
 
+        <section id="tributaria" class="scroll-mt-20 mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-stone-900 mb-4">Análise Tributária Comparativa</h2>
+            <p class="text-lg text-stone-600 mb-8">
+                Comparação dos impactos tributários entre os modelos Reseller 1 e Distribution (Bulk Purchase) no Brasil.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-stone-200">
+                    <h3 class="text-xl font-bold mb-4" style="color: #FF355E;">📋 Reseller 1 - Tributação</h3>
+                    <div class="space-y-3">
+                        <div class="p-3 bg-stone-50 rounded-lg">
+                            <p class="text-sm font-semibold text-stone-800 mb-1">CNAE Aplicável</p>
+                            <p class="text-xs text-stone-600">7490-1/04 - Intermediação e agenciamento de serviços</p>
+                        </div>
+                        <div class="p-3 bg-stone-50 rounded-lg">
+                            <p class="text-sm font-semibold text-stone-800 mb-1">Natureza da Receita</p>
+                            <p class="text-xs text-stone-600">Comissão (prestação de serviço de intermediação)</p>
+                        </div>
+                        <div class="p-3 bg-stone-50 rounded-lg">
+                            <p class="text-sm font-semibold text-stone-800 mb-1">Lucro Presumido (LP)</p>
+                            <ul class="text-xs text-stone-600 mt-1 space-y-1">
+                                <li>• Presunção: 32% (IRPJ/CSLL)</li>
+                                <li>• Carga Federal: 11,33% sobre comissão</li>
+                                <li>• ISS: 2% a 5% sobre comissão</li>
+                                <li>• PIS/COFINS: Regime cumulativo (3,65%)</li>
+                        </ul>
+                    </div>
+                        <div class="p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                            <p class="text-sm font-semibold text-green-800 mb-1">✅ Vantagens</p>
+                            <ul class="text-xs text-green-700 mt-1 space-y-1">
+                                <li>• Baixa complexidade fiscal</li>
+                                <li>• Sem risco de estoque</li>
+                                <li>• Carga tributária previsível</li>
+                        </ul>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-teal-200">
+                    <h3 class="text-xl font-bold mb-4" style="color: #07A2AD;">💼 Distribution - Tributação</h3>
+                    <div class="space-y-3">
+                        <div class="p-3 bg-teal-50 rounded-lg">
+                            <p class="text-sm font-semibold text-stone-800 mb-1">CNAE Aplicável</p>
+                            <p class="text-xs text-stone-600">6202-3/00 - Licenciamento de software (ou similar)</p>
+                        </div>
+                        <div class="p-3 bg-teal-50 rounded-lg">
+                            <p class="text-sm font-semibold text-stone-800 mb-1">Natureza da Receita</p>
+                            <p class="text-xs text-stone-600">Receita de venda (compra e revenda de licenças)</p>
+            </div>
+                        <div class="p-3 bg-teal-50 rounded-lg">
+                            <p class="text-sm font-semibold text-stone-800 mb-1">Lucro Real (LR) - Recomendado</p>
+                            <ul class="text-xs text-stone-600 mt-1 space-y-1">
+                                <li>• IRPJ/CSLL: Sobre lucro real (deduz custo)</li>
+                                <li>• PIS/COFINS: Regime não-cumulativo</li>
+                                <li>• Crédito PIS/COFINS: 9,25% sobre custo de aquisição</li>
+                                <li>• CIDE: 10% na remessa ao exterior</li>
+                                <li>• IRRF: 15% na remessa (compensável via DTT)</li>
+                        </ul>
+                    </div>
+                        <div class="p-3 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                            <p class="text-sm font-semibold text-yellow-800 mb-1">⚠️ Considerações</p>
+                            <ul class="text-xs text-yellow-700 mt-1 space-y-1">
+                                <li>• Requer Lucro Real (LR)</li>
+                                <li>• CIDE não é mitigável</li>
+                                <li>• Maior complexidade operacional</li>
+                                <li>• Vantajoso com margem baixa (&lt;30%)</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-6 rounded-2xl shadow-lg border-l-4 border-blue-500 mb-8">
+                <h3 class="text-xl font-bold mb-3 text-blue-800">📊 Resumo Comparativo</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full text-sm">
+                        <thead>
+                            <tr class="bg-blue-100">
+                                <th class="px-4 py-2 text-left font-semibold text-blue-900">Aspecto</th>
+                                <th class="px-4 py-2 text-center font-semibold text-blue-900">Reseller 1 (LP)</th>
+                                <th class="px-4 py-2 text-center font-semibold text-blue-900">Distribution (LR)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-blue-200">
+                            <tr>
+                                <td class="px-4 py-2 font-medium text-stone-700">Carga Federal sobre Receita</td>
+                                <td class="px-4 py-2 text-center text-stone-600">11,33% sobre comissão</td>
+                                <td class="px-4 py-2 text-center text-stone-600">Variável (sobre lucro real)</td>
+                            </tr>
+                            <tr class="bg-blue-50">
+                                <td class="px-4 py-2 font-medium text-stone-700">Crédito PIS/COFINS</td>
+                                <td class="px-4 py-2 text-center text-stone-600">Não aplicável</td>
+                                <td class="px-4 py-2 text-center text-teal-600 font-semibold">9,25% sobre custo</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 font-medium text-stone-700">CIDE na Remessa</td>
+                                <td class="px-4 py-2 text-center text-stone-600">Nulo/Baixo</td>
+                                <td class="px-4 py-2 text-center text-red-600 font-semibold">10% (custo fixo)</td>
+                            </tr>
+                            <tr class="bg-blue-50">
+                                <td class="px-4 py-2 font-medium text-stone-700">Dedutibilidade de Custo</td>
+                                <td class="px-4 py-2 text-center text-stone-600">Não aplicável</td>
+                                <td class="px-4 py-2 text-center text-teal-600 font-semibold">Sim (CMV/CSP)</td>
+                            </tr>
+                            <tr>
+                                <td class="px-4 py-2 font-medium text-stone-700">Complexidade</td>
+                                <td class="px-4 py-2 text-center text-green-600 font-semibold">Baixa</td>
+                                <td class="px-4 py-2 text-center text-yellow-600 font-semibold">Alta</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="simulacao-gsx" class="scroll-mt-20 mb-16">
+            <h2 class="text-3xl font-bold tracking-tight text-stone-900 mb-4">Simulação Tributária - GSX Brasil</h2>
+            <p class="text-lg text-stone-600 mb-8">
+                Exemplo prático de cálculo tributário comparativo para o cliente GSX Brasil.
+            </p>
+
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-stone-200 mb-6">
+                <h3 class="text-xl font-bold mb-4" style="color: #07A2AD;">Dados do Cliente GSX Brasil</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="p-3 bg-stone-50 rounded-lg">
+                        <p class="text-xs text-stone-500 mb-1">Valor Mensal Final</p>
+                        <p class="text-lg font-bold text-stone-900">R$ 2.328,15</p>
+                            </div>
+                    <div class="p-3 bg-stone-50 rounded-lg">
+                        <p class="text-xs text-stone-500 mb-1">Valor Original</p>
+                        <p class="text-lg font-bold text-stone-900">R$ 2.739,00</p>
+                            </div>
+                    <div class="p-3 bg-stone-50 rounded-lg">
+                        <p class="text-xs text-stone-500 mb-1">Desconto Concedido</p>
+                        <p class="text-lg font-bold text-stone-900">15,00%</p>
+                            </div>
+                    <div class="p-3 bg-stone-50 rounded-lg">
+                        <p class="text-xs text-stone-500 mb-1">Licenças</p>
+                        <p class="text-lg font-bold text-stone-900">110</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-red-200">
+                    <h3 class="text-xl font-bold mb-4" style="color: #FF355E;">📋 Modelo Reseller 1 (Lucro Presumido)</h3>
+                    <div class="space-y-3">
+                        <div class="p-4 bg-stone-50 rounded-lg">
+                            <p class="text-sm font-semibold text-stone-800 mb-2">Receita de Comissão (40%)</p>
+                            <p class="text-2xl font-bold text-stone-900">R$ 931,26/mês</p>
+                            <p class="text-xs text-stone-500 mt-1">R$ 2.328,15 × 40%</p>
+                            </div>
+                        <div class="p-4 bg-red-50 rounded-lg">
+                            <p class="text-sm font-semibold text-red-800 mb-2">Tributação Federal (11,33%)</p>
+                            <p class="text-xl font-bold text-red-900">R$ 105,61/mês</p>
+                            <p class="text-xs text-red-600 mt-1">IRPJ (4,80%) + CSLL (2,88%) + PIS/COFINS (3,65%)</p>
+                            </div>
+                        <div class="p-4 bg-stone-50 rounded-lg">
+                            <p class="text-sm font-semibold text-stone-800 mb-2">ISS (estimado 5%)</p>
+                            <p class="text-xl font-bold text-stone-900">R$ 46,56/mês</p>
+                        </div>
+                        <div class="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
+                            <p class="text-sm font-semibold text-green-800 mb-2">Receita Líquida Mensal</p>
+                            <p class="text-2xl font-bold text-green-900">R$ 779,09/mês</p>
+                            <p class="text-xs text-green-600 mt-1">Após todos os impostos</p>
+                        </div>
+                        <div class="p-4 bg-blue-50 rounded-lg">
+                            <p class="text-sm font-semibold text-blue-800 mb-2">Total Anual (12 meses)</p>
+                            <p class="text-xl font-bold text-blue-900">R$ 9.349,08</p>
+                            <p class="text-xs text-blue-600 mt-1">Comissão: R$ 11.175,12 - Impostos: R$ 1.826,04</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-teal-200">
+                    <h3 class="text-xl font-bold mb-4" style="color: #07A2AD;">💼 Modelo Distribution (Lucro Real)</h3>
+                            <div class="space-y-3">
+                        <div class="p-4 bg-stone-50 rounded-lg">
+                            <p class="text-sm font-semibold text-stone-800 mb-2">Receita de Venda</p>
+                            <p class="text-2xl font-bold text-stone-900">R$ 2.328,15/mês</p>
+                            <p class="text-xs text-stone-500 mt-1">Valor total faturado ao cliente</p>
+                                </div>
+                        <div class="p-4 bg-teal-50 rounded-lg">
+                            <p class="text-sm font-semibold text-teal-800 mb-2">Custo de Aquisição (50% desconto)</p>
+                            <p class="text-xl font-bold text-teal-900">R$ 1.164,08/mês</p>
+                            <p class="text-xs text-teal-600 mt-1">Valor pago à Factorial</p>
+                                </div>
+                        <div class="p-4 bg-yellow-50 rounded-lg border-l-4 border-yellow-500">
+                            <p class="text-sm font-semibold text-yellow-800 mb-2">CIDE (10% sobre remessa)</p>
+                            <p class="text-lg font-bold text-yellow-900">R$ 116,41/mês</p>
+                            <p class="text-xs text-yellow-600 mt-1">Custo fixo não dedutível</p>
+                                </div>
+                        <div class="p-4 bg-teal-50 rounded-lg">
+                            <p class="text-sm font-semibold text-teal-800 mb-2">Crédito PIS/COFINS (9,25%)</p>
+                            <p class="text-xl font-bold text-teal-900">R$ 107,68/mês</p>
+                            <p class="text-xs text-teal-600 mt-1">Sobre custo de aquisição</p>
+                                    </div>
+                        <div class="p-4 bg-stone-50 rounded-lg">
+                            <p class="text-sm font-semibold text-stone-800 mb-2">Margem Bruta Tributável</p>
+                            <p class="text-xl font-bold text-stone-900">R$ 1.164,07/mês</p>
+                            <p class="text-xs text-stone-500 mt-1">Receita - Custo de Aquisição</p>
+                        </div>
+                        <div class="p-4 bg-green-50 rounded-lg border-l-4 border-green-500">
+                            <p class="text-sm font-semibold text-green-800 mb-2">Receita Líquida Estimada</p>
+                            <p class="text-2xl font-bold text-green-900">R$ ~1.150,00/mês*</p>
+                            <p class="text-xs text-green-600 mt-1">Após IRPJ/CSLL/PIS/COFINS e CIDE</p>
+                            <p class="text-xs text-green-500 mt-2 italic">*Cálculo depende do lucro real apurado</p>
+                        </div>
+                        <div class="p-4 bg-blue-50 rounded-lg">
+                            <p class="text-sm font-semibold text-blue-800 mb-2">Total Anual (12 meses)</p>
+                            <p class="text-xl font-bold text-blue-900">R$ ~13.800,00*</p>
+                            <p class="text-xs text-blue-600 mt-1">Margem: R$ 16.434,00 - CIDE: R$ 1.396,92 - Impostos estimados</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-teal-500 to-cyan-500 p-6 rounded-2xl shadow-xl text-white">
+                <h3 class="text-xl font-bold mb-4">📊 Comparativo GSX Brasil</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm p-4 rounded-lg">
+                        <p class="text-sm opacity-90 mb-1">Reseller 1 (12 meses)</p>
+                        <p class="text-2xl font-bold">R$ 9.349,08</p>
+                        <p class="text-xs opacity-75 mt-1">Receita líquida após impostos</p>
+                    </div>
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm p-4 rounded-lg">
+                        <p class="text-sm opacity-90 mb-1">Distribution (12 meses)</p>
+                        <p class="text-2xl font-bold">R$ ~13.800,00</p>
+                        <p class="text-xs opacity-75 mt-1">Receita líquida estimada</p>
+                    </div>
+                    <div class="bg-white bg-opacity-30 backdrop-blur-sm p-4 rounded-lg">
+                        <p class="text-sm opacity-90 mb-1">Diferença Estimada</p>
+                        <p class="text-2xl font-bold">+R$ 4.450,92</p>
+                        <p class="text-xs opacity-75 mt-1">~+47,6% mais receita líquida</p>
+                    </div>
+                </div>
+                <div class="mt-4 p-4 bg-white bg-opacity-20 backdrop-blur-sm rounded-lg">
+                    <p class="text-sm italic">*Nota: Os valores do modelo Distribution são estimativos e dependem do regime de Lucro Real, margem real apurada, e outros fatores contábeis. Análise final deve ser feita com contador/jurídico.</p>
+                </div>
+            </div>
+        </section>
+
         <section id="calculos" class="scroll-mt-20 mb-16">
             <h2 class="text-3xl font-bold tracking-tight text-stone-900 mb-4">Cálculos Detalhados por Cliente</h2>
             <p class="text-lg text-stone-600 mb-8">
@@ -305,7 +557,7 @@
                             <p class="text-sm text-stone-600 mb-2"><strong>Comissão Anual (12 meses):</strong> €1.038,36</p>
                             <p class="text-lg font-bold mt-4" style="color: #07A2AD;">Total: €1.038,36</p>
                         </div>
-                    </div>
+                </div>
                 </div>
 
                 <div class="bg-white p-6 rounded-2xl shadow-lg border-2 border-teal-200">
@@ -313,14 +565,14 @@
                     <div class="p-4 rounded-lg bg-red-50 border-l-4 border-red-500 mb-4">
                         <p class="text-sm font-bold text-red-800 mb-2">⚠️ SITUAÇÃO ESPECIAL</p>
                         <p class="text-sm text-red-700">Valor mensal atual já possui desconto aplicado (€4.137,03). Representa 2.500 licenças.</p>
-                    </div>
+                </div>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="p-4 rounded-lg bg-stone-50">
                             <p class="text-sm text-stone-600 mb-2"><strong>Valor Mensal:</strong> €4.137,03</p>
                             <p class="text-sm text-stone-600 mb-2"><strong>Licenças:</strong> 2.500</p>
                             <p class="text-sm text-stone-600 mb-2"><strong>Mês Fechamento:</strong> Out/2025</p>
                             <p class="text-sm text-stone-600"><strong>Status:</strong> Closed Won</p>
-                        </div>
+            </div>
                         <div class="p-4 rounded-lg bg-teal-50">
                             <p class="text-sm text-stone-600 mb-2"><strong>Comissão Mensal (40%):</strong> €1.654,81</p>
                             <p class="text-sm text-stone-600 mb-2"><strong>Comissão Anual (12 meses):</strong> €19.857,72</p>
@@ -331,7 +583,7 @@
 
                 <div class="bg-white p-6 rounded-2xl shadow-lg border border-stone-200">
                     <h3 class="text-xl font-bold mb-4" style="color: #07A2AD;">Grupo NX</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="p-4 rounded-lg bg-stone-50">
                             <p class="text-sm text-stone-600 mb-2"><strong>Valor Mensal:</strong> €199,04</p>
                             <p class="text-sm text-stone-600 mb-2"><strong>Licenças:</strong> 30</p>
@@ -384,17 +636,17 @@
             <div class="mt-8 bg-gradient-to-r from-teal-500 to-cyan-500 p-8 rounded-2xl shadow-xl text-white">
                 <h3 class="text-2xl font-bold mb-4 text-center">Resumo Total</h3>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                    <div>
+                        <div>
                         <p class="text-sm opacity-90 mb-1">Receita Mensal Total</p>
-                        <p class="text-3xl font-bold">€5.825,69</p>
-                    </div>
-                    <div>
-                        <p class="text-sm opacity-90 mb-1">Comissão Mensal (40%)</p>
-                        <p class="text-3xl font-bold">€2.330,28</p>
+                        <p class="text-3xl font-bold">R$ 26.742,52</p>
+                            </div>
+                        <div>
+                        <p class="text-sm opacity-90 mb-1">Revenda 1 ano (40%)</p>
+                        <p class="text-3xl font-bold">R$ 128.364,10</p>
                     </div>
                         <div>
-                        <p class="text-sm opacity-90 mb-1">Comissão Total 12 meses</p>
-                        <p class="text-3xl font-bold">€27.963,36</p>
+                        <p class="text-sm opacity-90 mb-1">Distribuição 2 anos</p>
+                        <p class="text-3xl font-bold">R$ 634.704,71</p>
                     </div>
                 </div>
             </div>

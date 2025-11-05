@@ -1,0 +1,322 @@
+﻿ANÁLISE COMPARATIVA DE ENQUADRAMENTO TRIBUTÁRIO: MODELOS DE PARCERIA RESELLER VS. DISTRIBUTION (BULK PURCHASE) PARA LICENCIAMENTO DE SOFTWARE (SaaS) NO BRASIL
+
+
+
+
+Seção I: Contexto Regulatório e Classificação Jurídica do Software (SaaS)
+
+
+O tratamento fiscal aplicado ao licenciamento de Software as a Service (SaaS) no Brasil é determinado por uma complexa interação entre a legislação municipal e a federal, recentemente pacificada pelo judiciário e reinterpretada pela autoridade fiscal. A compreensão da natureza jurídica da transação de software é o ponto de partida para a análise comparativa dos modelos de parceria.
+
+
+1.1. Fundamentação Legal do Licenciamento de Software como Serviço
+
+
+O cenário tributário para software foi historicamente marcado pela guerra fiscal entre estados (ICMS) e municípios (ISS). Este conflito foi definitivamente resolvido pelo Supremo Tribunal Federal (STF). O STF pacificou o entendimento de que o licenciamento ou a cessão de direito de uso de programas de computador, englobando tanto softwares padronizados (ou de prateleira) quanto aqueles desenvolvidos sob encomenda ou customizados, estão sujeitos exclusivamente ao Imposto Sobre Serviços de Qualquer Natureza (ISS).1
+Essa decisão, proferida no julgamento da ADI 5659 e modulada em 2021, consolidou o conceito de que o SaaS constitui uma prestação de serviço.2 A fundamentação remete à Lei Complementar nº 116/2003, que rege o ISS, e suas alterações subsequentes, como a LC 157/2016, que reforçaram a inclusão de serviços digitais na lista de incidência municipal.4 A uniformização dessa classificação elimina a contingência fiscal relacionada ao ICMS e exige que a tributação municipal, com alíquotas que variam de 2% a 5% a depender do município 6, seja aplicada sobre a base de cálculo da prestação de serviço.
+A classificação homogênea da operação como serviço é de suma importância. Embora garanta segurança jurídica no âmbito municipal, ela transfere o foco da análise crítica para a tributação federal (IRPJ, CSLL, PIS e COFINS). A Receita Federal do Brasil (RFB) historicamente tentava aplicar o regime de comércio (presunção de 8% e 12%) para softwares padronizados, mas a natureza jurídica de serviço reforçada pelo STF tem consequências diretas na definição dos percentuais de presunção do Lucro Presumido, conforme será detalhado na Seção III.
+
+
+1.2. Definição e Diferenciação dos Modelos de Parceria sob a Ótica Fiscal
+
+
+Os dois modelos de parceria propostos, embora ambos resultem na entrega do software ao usuário final, possuem estruturas de receita e responsabilidade fiscal fundamentalmente distintas, as quais influenciam o regime tributário mais vantajoso.
+
+
+1.2.1. Modelo Reseller 1 (Intermediação/Agenciamento)
+
+
+Neste modelo, a empresa brasileira (Edix) atua primariamente como agente comercial, intermediando a venda da licença do principal (Factorial) para o cliente final. A receita tributável da Edix não é o valor total da licença, mas sim a comissão ou markup recebido pela facilitação do negócio.8
+A Classificação Nacional de Atividades Econômicas (CNAE) aplicável é tipicamente a 7490-1/04 – Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários.9 Esta atividade é classificada como prestação de serviço pura. A principal vantagem operacional deste modelo é o baixo risco, pois a Edix não assume o risco de estoque ou o custo integral de aquisição da licença junto à Factorial.
+
+
+1.2.2. Modelo Distribution (Bulk Purchase)
+
+
+Neste modelo, a Edix assume a posição de licenciadora no Brasil. A operação envolve a aquisição, em nome próprio, do direito de comercialização (licença) em volumes (Bulk Purchase) junto ao parceiro estrangeiro (Factorial), e a posterior cessão do direito de uso ao cliente final brasileiro. A receita tributável é, portanto, o valor total da venda da licença ao cliente final.
+Embora o CNAE possa estar relacionado ao licenciamento de software customizável (ex: 6202-3/00) 12, o aspecto operacional envolve a gestão de um "estoque" de direitos de uso.13 A principal implicação fiscal é que a Edix passa a ser responsável pela gestão do Custo do Serviço Prestado (CSP) ou Custo da Mercadoria Vendida (CMV), representado pelo valor pago à Factorial no exterior. Esta mudança é crucial, pois transforma a maior despesa da operação (custo da licença) em um insumo dedutível (no Lucro Real) ou em um custo não dedutível (no Lucro Presumido), além de disparar o gatilho da tributação internacional na remessa ao exterior.
+
+
+Seção II: Modelo Atual: Reseller 1 (Intermediação/Agenciamento de Serviços)
+
+
+O Modelo Reseller 1 (Intermediação/Agenciamento) é caracterizado pela sua simplicidade fiscal e operacional, sendo o Lucro Presumido (LP) geralmente o regime mais vantajoso, especialmente para empresas com alta margem de intermediação.
+
+
+2.1. Premissas Operacionais e Base de Cálculo
+
+
+A receita tributável neste modelo é estritamente a receita bruta proveniente da comissão ou da margem de intermediação, conforme definido no contrato de agenciamento.8
+A tributação municipal (ISS) incide sobre essa receita de intermediação, com alíquotas variando de 2% a 5%.7 É importante notar que o CNAE 7490-1/04, que compreende a intermediação de negócios em geral 9, enquadra-se no Simples Nacional, mas tipicamente no Anexo V, dependendo do Fator R, ou no Anexo III, com alíquotas iniciais de 6,00%.14 Contudo, dada a complexidade e potencial volume de negócios, a análise foca nos regimes de Lucro Presumido e Lucro Real, que são mais comuns para parcerias internacionais de volume.
+
+
+2.2. Tributação Federal no Lucro Presumido (LP)
+
+
+Para atividades de intermediação e agenciamento de serviços, a legislação federal impõe percentuais fixos de presunção de lucro sobre a receita bruta (a comissão/margem) para o cálculo do IRPJ e da CSLL.16
+O percentual de presunção aplicável para serviços de intermediação é de 32% sobre a receita bruta de serviços para ambos os tributos, IRPJ e CSLL.6
+O cálculo do IRPJ e da CSLL segue as alíquotas nominais aplicadas à base presumida:
+* IRPJ: 15% sobre a Base Presumida (32%). Caso a Base Presumida exceda R$ 60.000,00 no trimestre (R$ 20.000,00 por mês), incide um adicional de 10% sobre o excedente.17
+* CSLL: 9% sobre a Base Presumida (32%).17
+As contribuições federais PIS e COFINS são apuradas no regime cumulativo (típico do LP), incidindo diretamente sobre a receita bruta (a comissão), sem direito a créditos na entrada.7
+* PIS: 0.65%.7
+* COFINS: 3.00%.7
+A carga efetiva federal mínima total (sem o adicional de IRPJ) sobre a receita bruta de intermediação é calculada da seguinte forma:
+Tributo
+	Presunção
+	Alíquota Nominal
+	Carga Efetiva
+	IRPJ
+	32%
+	15%
+	4,80%
+	CSLL
+	32%
+	9%
+	2,88%
+	PIS (Cum.)
+	100%
+	0,65%
+	0,65%
+	COFINS (Cum.)
+	100%
+	3,00%
+	3,00%
+	Total Federal (Mínimo)
+	-
+	-
+	11,33%
+	Portanto, a carga tributária efetiva total (Federal + Municipal) para o Reseller 1 no Lucro Presumido varia entre 13,33% e 16,33% sobre a receita da comissão.7 Esta carga efetiva estabelece o benchmark fiscal para o modelo atual.
+
+
+2.3. Tributação Federal no Lucro Real (LR)
+
+
+No Lucro Real (LR), IRPJ e CSLL incidem sobre o lucro contábil ajustado (Lucro Real), e não sobre a receita bruta presumida. As alíquotas nominais são de 15% (IRPJ + 10% adicional) e 9% (CSLL).
+Para PIS e COFINS, aplica-se o regime não-cumulativo, com alíquotas de 1.65% e 7.6%, respectivamente.19 Embora este regime permita o aproveitamento de créditos, o Modelo Reseller, por gerar receita puramente de comissão, possui um custo de venda baixo ou nulo (não há custo de aquisição da licença). Os créditos são restritos a despesas operacionais gerais (como aluguéis, energia, salários), limitando significativamente o benefício da não-cumulatividade.20 Consequentemente, o Lucro Real é tipicamente desvantajoso para operações de intermediação pura, onde as margens de lucro operacional são elevadas, e o custo de aquisição da "mercadoria" não existe.
+
+
+Seção III: Modelo Proposto: Distribution (Bulk Purchase)
+
+
+A migração para o Modelo Distribution (Bulk Purchase) implica uma mudança radical na estrutura de custos e no regime fiscal aplicável. O foco estratégico neste modelo é a gestão do custo de aquisição da licença, que se torna a maior alavanca de otimização fiscal.
+
+
+3.1. Implicações Operacionais e Contábeis
+
+
+Ao adquirir licenças em lote, a Edix assume o risco operacional de inventário, ou inventory risk.13 O desafio contábil principal é o tratamento do Custo do Serviço Prestado (CSP) ou CMV, que corresponde ao pagamento efetuado à Factorial. A correta classificação e dedutibilidade desse custo são essenciais para determinar a carga tributária real.
+
+
+3.2. Análise Crítica da Tributação Federal (IRPJ/CSLL) no LP
+
+
+A análise do Lucro Presumido para o Modelo Bulk Purchase exige a consideração das recentes alterações no entendimento da Receita Federal do Brasil (RFB) sobre software.
+O Fim da Presunção Reduzida (8%/12%): A tributação de software padronizado já gerou debates, com contribuintes argumentando pela aplicação da presunção de 8% (IRPJ) e 12% (CSLL), característica de revenda de mercadorias.18 No entanto, a posição do STF de classificar o licenciamento como serviço eliminou a base legal para essa tese.
+Posição Atual da RFB (SC COSIT 36/2023): Em uma mudança crucial que impacta diretamente a viabilidade do Bulk Purchase no LP, a RFB pacificou o entendimento de que o licenciamento ou cessão de direito de uso de programas de computador padronizados ou customizados em pequena extensão é classificado como serviço. Assim, a Solução de Consulta COSIT nº 36/2023, reforçada pela SC DISIT nº 7.016/2024 21, determinou que o percentual de presunção para IRPJ e CSLL sobre a receita bruta total deve ser de 32% (alínea "a" do inciso III, § 1º, do art. 15 da Lei nº 9.249/1995).21
+Consequência Estratégica: Esta uniformização de 32% torna o Lucro Presumido economicamente inviável para o Modelo Bulk Purchase se a margem de lucro real for baixa (ou seja, se o custo de aquisição da licença for alto). Enquanto o Modelo Reseller aplica 11,33% sobre a margem de intermediação, o Modelo Bulk Purchase no LP aplica 11,33% sobre a receita bruta total (preço final de venda). Se a margem real de lucro for de, por exemplo, 20%, a carga efetiva de 11,33% sobre a receita bruta corresponde a 56,65% da margem real (11,33% / 20%). Portanto, a migração para Bulk Purchase é contraindicada se o regime LP for mantido.
+
+
+3.3. Oportunidade Estratégica no Lucro Real (LR)
+
+
+A inviabilidade fiscal do LP no cenário pós-SC COSIT 36/2023 demonstra que a adoção do Modelo Bulk Purchase só se justifica economicamente se for acompanhada pela adesão ao Lucro Real (LR). O fator de otimização reside no tratamento do custo de aquisição da licença.
+
+
+3.3.1. Dedução de Custos e Créditos de PIS/COFINS
+
+
+No Lucro Real, o IRPJ e a CSLL incidem sobre o lucro real, permitindo a dedução integral do custo de aquisição da licença (CSP/CMV).20 Mais crucial ainda é o regime não-cumulativo de PIS/COFINS (alíquotas de 1.65% e 7.6%, respectivamente).19
+O custo de aquisição da licença importada (o valor pago à Factorial) deve ser classificado como insumo essencial na prestação do serviço de licenciamento ou como Custo de Aquisição, permitindo o aproveitamento de créditos de PIS/COFINS Não-Cumulativo.19 Este crédito totaliza 9,25% sobre o valor da aquisição da licença.
+A alavanca fiscal é significativa: se o custo de aquisição for alto (margem real baixa), o crédito de 9,25% sobre esse custo pode neutralizar grande parte do PIS/COFINS incidente sobre a receita de venda, que no regime cumulativo (LP) totaliza 3,65%. A economia potencial gerada pelos créditos pode superar a carga fixa do Lucro Presumido, tornando o LR a única via de otimização fiscal para o Bulk Purchase.
+
+
+Seção IV: Aspectos Internacionais e Remessas ao Exterior
+
+
+O Modelo Bulk Purchase exige que a Edix realize pagamentos regulares à Factorial no exterior, o que aciona a responsabilidade tributária da Edix como fonte pagadora, introduzindo complexidades de retenção na fonte (IRRF e CIDE).
+
+
+4.1. Qualificação dos Pagamentos e Incidência de CIDE e IRRF
+
+
+Os valores pagos pela Edix à Factorial pela aquisição do direito de comercialização ou distribuição de software são tipicamente qualificados pela Receita Federal como royalties.25 Esta qualificação é determinante para a aplicação dos tributos incidentes na remessa.
+
+
+4.1.1. Imposto de Renda Retido na Fonte (IRRF)
+
+
+O IRRF padrão incidente sobre remessas de royalties ao exterior é de 15%.25 A Edix é responsável por reter e recolher este imposto.
+
+
+4.1.2. CIDE-Tecnologia
+
+
+A Contribuição de Intervenção no Domínio Econômico (CIDE-Tecnologia) incide sobre remessas relativas a serviços técnicos, royalties ou assistência técnica, com alíquota de 10%.26 A RFB tem mantido posições controversas sobre o SaaS; embora existam argumentos para afastar a incidência da CIDE em licenciamentos puros 27, a Solução de Consulta nº 191/2017 anterior classificava o SaaS como "serviços técnicos", mantendo o risco de cobrança da CIDE em 10%.26
+Este imposto (CIDE 10%) representa um custo fiscal puro e não mitigável pelo Acordo de Bitributação (DTT), sendo um ponto de atenção máxima na modelagem do Bulk Purchase.
+
+
+4.2. Mitigação da Bitributação: Acordo Brasil-Espanha (DTT)
+
+
+Assumindo que a Factorial é residente fiscal na Espanha, aplica-se o Acordo para Evitar a Dupla Tributação (DTT) entre Brasil e Espanha.28 Embora o DTT não elimine a retenção brasileira de IRRF, ele proporciona benefícios cruciais para a Factorial (a empresa espanhola) no momento da declaração de seus rendimentos.
+O DTT Brasil-Espanha prevê uma cláusula de Matching Credit Recíproca para royalties. Esta cláusula permite que a Factorial deduza em seu país de origem um montante fixo do tributo, mesmo que o IRRF retido no Brasil seja inferior. O tratado estipula que o tributo incidente sobre royalties será sempre considerado, para fins de dedução na Espanha, como tendo sido pago com a alíquota de 25%.29
+Apesar de a Factorial ser beneficiada pelo mecanismo de matching credit, o DTT cobre apenas o Imposto de Renda (IRRF/IRPJ), não alcançando a CIDE.30 Portanto, o custo da CIDE de 10% permanece inalterado e é de responsabilidade da Edix, elevando o custo da aquisição da licença em 10% (além do IRRF de 15%, que é compensável pela Factorial).
+
+
+4.3. PIS/COFINS-Importação
+
+
+Na remessa de valores ao exterior pela aquisição de direitos (licença), incide o PIS/COFINS-Importação, totalizando 9,25% sobre o valor remetido.
+Para a Edix, este tributo possui um efeito neutro no longo prazo, mas gera uma exigência de fluxo de caixa.19 O valor pago a título de PIS/COFINS-Importação pode ser recuperado integralmente como crédito de PIS/COFINS Não-Cumulativo (9,25%) na apuração interna, desde que a Edix esteja no regime do Lucro Real. Isso significa que a aquisição da licença no exterior, no regime LR, gera crédito federal em duas frentes: (1) sobre o valor da remessa (insumo/CMV), e (2) sobre o imposto de importação efetivamente pago.
+
+
+Seção V: Comparativo de Carga Tributária Efetiva e Otimização Fiscal
+
+
+A decisão de migrar do Modelo Reseller para o Modelo Distribution deve ser baseada em uma análise custo-benefício que considere a carga tributária efetiva e os custos adicionais de remessa.
+
+
+5.1. Comparação Quantitativa no Lucro Presumido (LP)
+
+
+Conforme estabelecido pela Solução de Consulta COSIT 36/2023, o Lucro Presumido se torna desvantajoso para o Modelo Bulk Purchase.
+O Modelo Reseller tributa apenas a margem/comissão com 11,33% (Federal).7 O Modelo Bulk Purchase também tributa com 11,33% (Federal), mas sobre a receita bruta total (100% do preço de venda), sem permitir a dedução do custo de aquisição da licença. Se a margem real de lucro for baixa, essa carga efetiva é proibitiva, podendo facilmente exceder 50% do lucro real da operação.
+A neutralização do benefício fiscal de presunção reduzida (8%/12%) pela RFB 21 é o fator primário que torna a migração para Bulk Purchase no regime LP inviável.
+
+
+5.2. Oportunidade Estratégica no Lucro Real (LR)
+
+
+A única justificativa para a transição para o Bulk Purchase é a adoção concomitante do Lucro Real (LR). O LR permite a Edix deduzir o custo de aquisição da licença e, mais importante, aproveitar o crédito de PIS/COFINS de 9,25% sobre este custo, compensando a não-dedutibilidade do custo no LP.
+O cálculo da viabilidade deve contrapor o ganho com PIS/COFINS no LR com o aumento de complexidade, a maior incidência de IRPJ/CSLL (sobre o lucro real, tipicamente maior que a presunção se a margem for muito baixa) e, crucialmente, o custo de 10% da CIDE.
+
+
+Tabela 1: Resumo Comparativo dos Modelos (Lucro Presumido)
+
+
+
+
+Fator de Análise
+	Modelo Reseller (Intermediação - LP)
+	Modelo Distribution (Licenciamento - LP)
+	Base de Cálculo (IRPJ/CSLL)
+	Receita de Comissão/Margem
+	Receita Bruta Total (Preço de Venda)
+	Percentual de Presunção (IRPJ/CSLL)
+	32% / 32% [16]
+	32% / 32% (Conforme SC COSIT 36/2023) 21
+	Custo de Aquisição (CMV)
+	Não Aplicável
+	Não Dedutível da Base de Cálculo Presumida
+	Carga Federal Efetiva Mínima
+	11,33% sobre a Margem
+	11,33% sobre a Receita Bruta Total
+	IRRF/CIDE na Remessa
+	Nulo/Baixo
+	15% IRRF + 10% CIDE (Retidos)
+	Viabilidade Econômica
+	Alto Margem = Vantajoso
+	Baixa Margem = Financeiramente Inviável
+	
+
+5.3. Análise do Ponto de Equilíbrio (Break-Even Point)
+
+
+O ponto de equilíbrio (BEP) para a migração para o LR é determinado, primariamente, pela capacidade de o crédito de PIS/COFINS (9,25% sobre o custo de aquisição) superar o custo combinado da CIDE (10%) e o aumento de IRPJ/CSLL em relação ao LP.
+Se a Edix operar com uma alta taxa de custo de aquisição (ou seja, uma margem de lucro real baixa, por exemplo, abaixo de 30%), o impacto do crédito de PIS/COFINS no LR será maciço, pois o custo da licença representa a maior parte da receita.
+O Lucro Real torna-se vantajoso quando a economia gerada pelos créditos de PIS/COFINS Não-Cumulativo compensa a incidência do IRPJ/CSLL sobre o lucro real (alíquota de aproximadamente 34%) e a CIDE de 10% na remessa. Em geral, se o custo de aquisição da licença for superior a 70% da receita bruta de venda (margem real menor que 30%), o LR passa a ser a opção de maior otimização para o Bulk Purchase.20
+
+
+Seção VI: Conclusões e Recomendações Estratégicas
+
+
+
+
+6.1. Síntese dos Ganhos e Riscos Comparativos
+
+
+A análise demonstra que o Modelo Distribution (Bulk Purchase) possui um potencial de economia fiscal, mas está intrinsicamente ligado à adoção do regime de Lucro Real e a uma tolerância maior a riscos e complexidade operacional.
+* Modelo Reseller (Benchmark): Oferece baixa complexidade fiscal, alto compliance (no LP) e risco operacional nulo (sem estoque/CMV). O custo é previsível, mas alto, com carga efetiva de 11,33% sobre a margem de intermediação.
+* Modelo Distribution (Bulk Purchase): A vantagem fiscal é nula ou negativa no Lucro Presumido devido à aplicação da presunção de 32% sobre a receita bruta total (pós-SC COSIT 36/2023).21 A otimização só ocorre no Lucro Real, através da dedutibilidade do CMV/Insumo e do crédito de PIS/COFINS de 9,25% sobre esse custo.19 Contudo, introduz o custo fiscal adicional de 10% de CIDE na remessa, o qual não é mitigável por acordos de bitributação.26
+
+
+6.2. Recomendação do Regime Tributário Ideal para o Bulk Purchase
+
+
+O relatório conclui que a migração para o Modelo Bulk Purchase é uma estratégia viável de otimização fiscal somente se for acompanhada pela adesão obrigatória ao Lucro Real (LR).
+O critério de decisão deve ser a Margem de Lucro Bruto (MLB) da operação:
+1. Se a MLB for alta (Ex: Acima de 35%): Manter o Modelo Reseller (LP) é provavelmente a opção mais simples e segura.
+2. Se a MLB for baixa (Ex: Abaixo de 30%): O Modelo Bulk Purchase no Lucro Real se torna mais vantajoso, pois a economia gerada pelo crédito de 9,25% sobre o alto custo de aquisição deve superar o impacto do CIDE (10%) e a maior complexidade do IRPJ/CSLL.
+
+
+6.3. Requisitos de Compliance e Emissão Documental
+
+
+A transição exige rigoroso compliance documental e fiscal:
+* Emissão de Notas Fiscais: Manter a emissão de Nota Fiscal de Serviço (NFS-e) para o licenciamento de software, em conformidade com o entendimento definitivo do STF.1
+* Documentação do LR: É imprescindível manter documentação robusta (contratos, invoices) para suportar a classificação do pagamento à Factorial como insumo/CMV, justificando tanto a dedução de IRPJ/CSLL quanto o aproveitamento do crédito de PIS/COFINS (9,25%).19
+* Responsabilidade de Retenção: A Edix assume a responsabilidade de retenção e recolhimento do IRRF (15%) e da CIDE (10%) sobre os pagamentos de royalties ao exterior.25 A falha nessa retenção pode resultar em autuação fiscal da Edix como responsável tributária.
+
+
+Tabela 2: Check-list de Riscos e Vantagens Fiscais na Transição Estratégica
+
+
+
+
+Fator de Análise
+	Modelo Reseller (LP)
+	Modelo Bulk Purchase (LR - Recomendado)
+	Impacto Final
+	Carga Federal sobre Margem
+	Elevada (Min. 11,33% sobre margem)
+	Variável (Min. IRPJ/CSLL + PIS/COFINS líquido)
+	Otimização fiscal possível, dependendo da MLB.
+	Crédito PIS/COFINS (9,25%)
+	Não Aplicável
+	Integralmente Aplicável sobre Custo de Aquisição
+	Principal alavanca de economia.
+	CIDE (10% Retido)
+	Nulo/Baixo
+	Alto (Custo fiscal não mitigável) 26
+	Aumento do custo de aquisição real da licença.
+	Risco de Estoque/CMV
+	Baixo
+	Alto (Exige gestão de inventário de licenças) 13
+	Aumento da complexidade operacional e contábil.
+	Benefício DTT Espanha
+	Nulo
+	Benefício de Matching Credit para a Factorial (25%) 29
+	Maior eficiência do ponto de vista do parceiro estrangeiro.
+	A decisão pela migração deve ser sustentada por uma simulação detalhada no regime de Lucro Real, que quantifique a economia do crédito de PIS/COFINS em função da Margem de Lucro Bruto, comparando-a diretamente com o custo fixo de 10% da CIDE e o risco de contencioso associado.
+Works cited
+1. Incide ISS no fornecimento de programa de computador mediante contrato de licenciamento ou cessão do direito de uso, tanto para os “softwares” padronizados quanto para aqueles produzidos por encomenda, accessed November 5, 2025, https://buscadordizerodireito.com.br/jurisprudencia/7936/incide-iss-no-fornecimento-de-programa-de-computador-mediante-contrato-de-licenciamento-ou-cessao-do-direito-de-uso-tanto-para-os-softwares-padronizados-quanto-para-aqueles-produzidos-por-encomenda
+2. Como calcular impostos sobre a importação de softwares - CLM Controller, accessed November 5, 2025, https://clmcontroller.com.br/tributos/como-calcular-impostos-sobre-a-importacao-de-softwares/
+3. STF invalida regras sobre ISS de planos de saúde e atividades financeiras, accessed November 5, 2025, https://portal.stf.jus.br/noticias/verNoticiaDetalhe.asp?idConteudo=508709&tip=UN
+4. Lcp 116 - Planalto, accessed November 5, 2025, https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm
+5. Tributação dos serviços digitais - Migalhas, accessed November 5, 2025, https://www.migalhas.com.br/depeso/430702/tributacao-dos-servicos-digitais
+6. A Tributação dos Softwares no Brasil - Startups, accessed November 5, 2025, https://startups.com.br/coluna/a-tributacao-dos-softwares-no-brasil/
+7. Lucro Presumido: o que é, alíquotas e tabela de impostos - Contabilizei, accessed November 5, 2025, https://www.contabilizei.com.br/contabilidade-online/lucro-presumido/
+8. Lucro Presumido para Corretores Imobiliários: Como Funciona? - Christino, accessed November 5, 2025, https://christinocontabilidade.com.br/blog/lucro-presumido-para-corretores-imobiliarios/
+9. CNAE – 7490-1/04 Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários. - IBGE | Concla | Busca online, accessed November 5, 2025, https://concla.ibge.gov.br/busca-online-cnae.html?subclasse=7490104&view=subclasse
+10. CNAE 7490-1/04 no Simples Nacional - Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários - Portal Contábeis, accessed November 5, 2025, https://www.contabeis.com.br/ferramentas/simples-nacional/7490104/
+11. 7490-1/04 - Atividades de intermediação e agenciamento de serviços e negócios em geral, exceto imobiliários - Senhor Contábil, accessed November 5, 2025, https://senhorcontabil.com.br/consulta-cnae/7490104-atividades-de-intermediacao-e-agenciamento-de-servicos-e-negocios-em-geral-exceto-imobiliarios/
+12. 6202-3/00 - IBGE | Concla | Busca online, accessed November 5, 2025, https://concla.ibge.gov.br/busca-online-cnae.html?subclasse=6202300&view=subclasse
+13. What is Inventory Management? - ServiceNow, accessed November 5, 2025, https://www.servicenow.com/br/products/it-asset-management/what-is-inventory-management.html
+14. Anexo III - Tabela do Simples Nacional - Portal Contábeis, accessed November 5, 2025, https://www.contabeis.com.br/tabelas/simples/anexo3
+15. Anexo III e Anexo V no Simples Nacional: saiba as diferenças - Facilite Contabilidade Online, accessed November 5, 2025, https://www.facilite.co/anexo-iii-e-anexo-v-no-simples-nacional-saiba-as-diferencas
+16. Percentuais de Presunção IRPJ e CSLL Lucro Presumido, accessed November 5, 2025, https://www.gestaocontabilidade.net/uploads/downloads/presuncao-presumido-20170324104346.pdf
+17. Lucro Presumido: entenda a tributação de IRPJ e CSLL - Jettax, accessed November 5, 2025, https://www.jettax.com.br/blog/lucro-presumido/
+18. IRPJ - LUCRO PRESUMIDO – CÁLCULO DO IMPOSTO - Portal Tributário, accessed November 5, 2025, https://www.portaltributario.com.br/guia/lucro_presumido_irpj.html
+19. PIS/ PASEP E COFINS INCIDÊNCIA NÃO-CUMULATIVA - CONSIDERAÇÕES GERAIS, accessed November 5, 2025, https://www.lefisc.com.br/materias/3102006ir2.htm
+20. Lucro Presumido para SaaS: quando é vantajoso? - Servtec Contabilidade, accessed November 5, 2025, https://www.servteccontabilidade.com.br/lucro-presumido-para-saas-quando-e-vantajoso
+21. Solução de Consulta COSIT Nº 36 DE 07/02/2023 - Federal - LegisWeb, accessed November 5, 2025, https://www.legisweb.com.br/legislacao/?id=442379
+22. TRIBUTAÇÃO SOFTWARE DE USO GERAL NO LUCRO PRESUMIDO, accessed November 5, 2025, https://contabilidadedeschamps.com.br/tributacao-software-de-uso-geral-no-lucro-presumido/
+23. Receita altera as alíquotas da BC de IRPJ e CSLL para licenciamento de software, accessed November 5, 2025, https://rmsa.com.br/aliquota-bc-licenciamento-de-software/
+24. Aproveitamento de Crédito do PIS e COFINS no Regime Não Cumulativo -, accessed November 5, 2025, https://recuperasimples.com.br/aproveitamento-de-credito-do-pis-e-cofins-no-regime-nao-cumulativo/
+25. IRRF na remessa para exterior de royalties de licença de software - Tributo Devido, accessed November 5, 2025, https://tributodevido.com.br/irrf-na-remessa-para-exterior-de-royalties-de-licenca-de-software/
+26. RFB emite Solução de Consulta sobre tributação de software pelo IRRF, CIDE e PIS/COFINS-Importação - Trench Rossi Watanabe, accessed November 5, 2025, https://www.trenchrossi.com/alertas-legais/rfb-emite-solucao-de-consulta-sobre-tributacao-de-software-pelo-irrf-cide-e-pis-cofins-importacao/
+27. RFB Esclarece Tributação na Importação de Licença de Comercialização de SaaS - GSGA, accessed November 5, 2025, https://gsga.com.br/rfb-esclarece-tributacao-na-importacao-de-licenca-de-comercializacao-de-saas/
+28. Acordo de Bitributação Brasil-Espanha: Principais Pontos - Brasil Tax, accessed November 5, 2025, https://brasiltax.com/blog/acordo-bitribuacao-brasil-espanha/
+29. A tributação brasileira de Royalties decorrentes da licença da propriedade intelectual e disponibilização de utilidades cor - Biblioteca Digital de Teses e Dissertações da USP, accessed November 5, 2025, https://www.teses.usp.br/teses/disponiveis/2/2133/tde-19082022-164912/publico/10562625MIO.pdf
+30. Fora Cide Remessas - ABES, accessed November 5, 2025, https://abes.org.br/fora-cide-remessas/
